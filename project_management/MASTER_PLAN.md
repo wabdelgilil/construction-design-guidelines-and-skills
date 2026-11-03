@@ -298,6 +298,9 @@ Target Tree Milestones:
 | **B** | Electrical | `elv_structured_cabling/` | `racks_and_backbone/` | **COMPLETED** | Calc Note, DXF Elevation, XLSX Schedule |
 | **B** | Electrical | `cctv_security/` | `dori_and_storage/` | **COMPLETED** | Calc Note, DXF Layout, XLSX Schedule |
 | **B** | Electrical | `emergency_lighting/` | `egress_and_cbs/` | **COMPLETED** | Calc Note, DXF Plan, XLSX Schedule |
+| **B** | Electrical | `power/` | `central_ups/` | **COMPLETED** | Calc Note, SLD & Room DXF, XLSX Schedule & BOQ |
+| **B** | Electrical | `lighting/` | `outdoor_lighting/` | **COMPLETED** | Calc Note, Road & Pole DXF, XLSX Schedule & BOQ |
+| **B** | Electrical | `elv_telecom/` | `smatv_iptv/` | **COMPLETED** | Calc Note, Riser & Dish DXF, XLSX Schedule & BOQ |
 | **C** | Mechanical | `hvac/` | `heat_load/` | **COMPLETED** | Calc Note, DXF Layout, XLSX Schedule |
 | **C** | Mechanical | `plumbing/` | `water_drainage/` | **COMPLETED** | Calc Note, DXF Riser, XLSX Schedule |
 | **D** | Architectural| `planning/` | `space_compliance/` | **COMPLETED** | Calc Note, DXF Layout, XLSX Schedule |

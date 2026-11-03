@@ -2,6 +2,29 @@
 
 ---
 
+## [2026-11-04] - Triple Expansion of Electrical Track: Central UPS, Outdoor Lighting & SMATV/IPTV (Modules E14, E15, E16)
+
+- [x] **Module E14: Central Uninterruptible Power Supply (UPS) & DC Battery Plant (`electrical/power_distribution/central_ups/`)**:
+  - `design_engine.py`: Constant-power battery discharge modeling according to IEEE 485 & IEEE 1184 ($P_{DC} = P_{Load} / \eta_{inv}$), Watts-per-cell calculations with 1.25 aging factor and end-of-discharge threshold (1.67 V/cell), VRLA monobloc string configuration (384V DC / 192 cells), AC/DC breaker protection sizing, and dedicated spark-proof battery room hydrogen ventilation sizing (IEEE 484 / NFPA 1 / SBC 401).
+  - Multi-deliverables: Technical Calculation Note (`calc_sheet.md` with LaTeX formulas), Corporate Excel Schedule & BOQ (`excel_exporter.py`), and Native AutoCAD Drawing (`dxf_exporter.py`) featuring True Online Double-Conversion SLD with Static & Maintenance Bypass and Battery Room Equipment Layout.
+  - Automated tests: `tests/test_central_ups.py` (4 tests passing).
+
+- [x] **Module E15: Outdoor Roadway & Area Lighting (`electrical/lighting/outdoor_lighting/`)**:
+  - `design_engine.py`: CIE 115:2010, EN 13201 (Parts 2 & 3), and IESNA RP-8 roadway lighting calculations. Geometry and pole spacing optimization ($S/H \approx 3.3$), average road surface illuminance ($E_{avg}$) and luminance ($L_{avg} \approx q_0 E_{avg}$ for CIE R3 asphalt), overall ($U_0$) and longitudinal ($U_l$) uniformity evaluation, balanced 3-phase cyclic connection (L1-L2-L3), and long feeder distributed voltage drop modeling ($L/2$ center-of-load).
+  - Multi-deliverables: Technical Calculation Note (`calc_sheet.md`), Corporate Excel Schedule & BOQ (`excel_exporter.py`) with pole schedule and cable quantities, and Native AutoCAD Drawing (`dxf_exporter.py`) with roadway layout, pole spacing, and octagonal pole foundation detail.
+  - Automated tests: `tests/test_outdoor_lighting.py` (3 tests passing).
+
+- [x] **Module E16: Satellite Master Antenna TV (SMATV) & IPTV Distribution (`electrical/low_current_elv/smatv_iptv/`)**:
+  - `design_engine.py`: EN 50083, EN 60728, and ITU-T J.83 RF link budget calculations. Parabolic satellite dish antenna gain ($G = \eta (\pi D / \lambda)^2$), floor-by-floor vertical riser tap attenuation cascading to guarantee user outlet signal levels within $60.0 - 77.0\text{ dB}\mu\text{V}$, cascadable multiswitch sizing, and IPTV headend multicast stream bandwidth analysis for 1080p FHD and 4K UHD channels.
+  - Multi-deliverables: Technical Calculation Note (`calc_sheet.md`), Corporate Excel Schedule & BOQ (`excel_exporter.py`) with floor RF link budget matrix, and Native AutoCAD Drawing (`dxf_exporter.py`) showing hybrid SMATV/IPTV vertical riser architecture and rooftop parabolic dish array.
+  - Automated tests: `tests/test_smatv_iptv.py` (3 tests passing).
+
+- [x] **Repository Verification & Quality Assurance**:
+  - **86 Unit Tests Passing (100% pass rate in 1.02s)** across `tests/`.
+  - Complete compliance with Tri-Deliverables standard (LaTeX Markdown Calc Note, AutoCAD DXF with standardized layers, and openpyxl Excel Workbook with priced BOQ).
+
+---
+
 ## [2026-11-03] - Comprehensive Granular Master Plan Restructured (Phase 5 to Phase 14)
 
 - [x] **Detailed Multi-Disciplinary Work Breakdown Enacted**:

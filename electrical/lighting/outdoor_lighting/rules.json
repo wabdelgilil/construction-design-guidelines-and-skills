@@ -1,0 +1,62 @@
+{
+  "leaf_skill": "outdoor_lighting",
+  "sub_branch": "lighting",
+  "discipline": "electrical",
+  "governing_standards": ["CIE 115:2010", "IESNA RP-8", "EN 13201", "SBC 401"],
+  "road_classes": {
+    "M1": {
+      "description": "High-speed motorways, expressways with separated dual carriageways",
+      "lavg_cd_per_m2": 2.0,
+      "u0_overall_uniformity": 0.40,
+      "ul_longitudinal_uniformity": 0.70,
+      "ti_threshold_increment_percent": 10.0,
+      "sr_surround_ratio": 0.50
+    },
+    "M2": {
+      "description": "High-speed roads, major primary arterials",
+      "lavg_cd_per_m2": 1.5,
+      "u0_overall_uniformity": 0.40,
+      "ul_longitudinal_uniformity": 0.70,
+      "ti_threshold_increment_percent": 10.0,
+      "sr_surround_ratio": 0.50
+    },
+    "M3": {
+      "description": "Major urban traffic routes, secondary arterials",
+      "lavg_cd_per_m2": 1.0,
+      "u0_overall_uniformity": 0.40,
+      "ul_longitudinal_uniformity": 0.60,
+      "ti_threshold_increment_percent": 15.0,
+      "sr_surround_ratio": 0.50
+    },
+    "M4": {
+      "description": "Urban connecting roads, distributor roads",
+      "lavg_cd_per_m2": 0.75,
+      "u0_overall_uniformity": 0.40,
+      "ul_longitudinal_uniformity": 0.60,
+      "ti_threshold_increment_percent": 15.0,
+      "sr_surround_ratio": 0.50
+    },
+    "M5": {
+      "description": "Local access roads, residential spine roads",
+      "lavg_cd_per_m2": 0.50,
+      "u0_overall_uniformity": 0.35,
+      "ul_longitudinal_uniformity": 0.40,
+      "ti_threshold_increment_percent": 15.0,
+      "sr_surround_ratio": 0.50
+    }
+  },
+  "pedestrian_classes": {
+    "P1": {"eavg_lux": 15.0, "emin_lux": 3.0},
+    "P2": {"eavg_lux": 10.0, "emin_lux": 2.0},
+    "P3": {"eavg_lux": 7.5, "emin_lux": 1.5},
+    "P4": {"eavg_lux": 5.0, "emin_lux": 1.0}
+  },
+  "arrangements": ["single_sided", "opposite", "staggered", "median_twin"],
+  "default_maintenance_factor": 0.80,
+  "luminaire_types": {
+    "LED_STREET_100W": {"power_w": 100, "lumens": 14000, "cct_k": 4000, "cri": 70, "optics": "Type II / III Medium"},
+    "LED_STREET_150W": {"power_w": 150, "lumens": 21500, "cct_k": 4000, "cri": 70, "optics": "Type II / III Medium"},
+    "LED_STREET_200W": {"power_w": 200, "lumens": 29000, "cct_k": 4000, "cri": 70, "optics": "Type III Medium"},
+    "LED_STREET_250W": {"power_w": 250, "lumens": 37500, "cct_k": 4000, "cri": 70, "optics": "Type III Long"}
+  }
+}

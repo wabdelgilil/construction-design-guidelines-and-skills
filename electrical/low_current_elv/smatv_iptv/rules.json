@@ -1,0 +1,27 @@
+{
+  "leaf_skill": "smatv_iptv",
+  "sub_branch": "low_current_elv",
+  "discipline": "electrical",
+  "governing_standards": ["EN 50083", "EN 60728", "ISO/IEC 11801", "ITU-T Rec. J.83", "SBC 401"],
+  "design_parameters": {
+    "min_outlet_signal_level_dbuv": 60.0,
+    "max_outlet_signal_level_dbuv": 77.0,
+    "recommended_target_signal_level_dbuv": 68.0,
+    "min_cnr_db": 12.0,
+    "max_ber_pre_viterbi": 1e-4,
+    "coaxial_cable_attenuation_db_per_100m": {
+      "RG6": 18.5,
+      "RG11": 11.2
+    },
+    "splitter_loss_db": {
+      "2_way": 4.0,
+      "4_way": 7.5,
+      "8_way": 11.0
+    },
+    "tap_loss_db": [10, 12, 14, 16, 20, 24],
+    "subscriber_outlet_loss_db": 1.5,
+    "multiswitch_gain_db": 3.0,
+    "optical_transmitter_wavelength_nm": 1310,
+    "optical_fiber_attenuation_db_per_km": 0.35
+  }
+}

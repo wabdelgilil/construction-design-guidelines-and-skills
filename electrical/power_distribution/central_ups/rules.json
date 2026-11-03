@@ -1,0 +1,56 @@
+{
+  "leaf_skill": "central_ups",
+  "sub_branch": "power_distribution",
+  "discipline": "electrical",
+  "governing_standards": ["IEC 62040-3", "IEEE 485", "IEEE 1184", "NFPA 111", "SBC 401"],
+  "codes": {
+    "SBC": {
+      "ups_topology": "VFI-SS-111 (True Online Double-Conversion)",
+      "nominal_voltage_v": 400.0,
+      "frequency_hz": 60.0,
+      "inverter_efficiency_percent": 95.0,
+      "rectifier_thdi_percent": 3.0,
+      "standard_battery_string_dc_voltage_v": 384.0,
+      "nominal_cell_voltage_v": 2.0,
+      "cells_per_12v_block": 6,
+      "end_of_discharge_cell_voltage_v": 1.67,
+      "battery_aging_factor": 1.25,
+      "battery_temperature_derating_factor_25c": 1.0,
+      "standard_backup_durations_minutes": [15.0, 30.0, 60.0],
+      "battery_room_hydrogen_limit_percent": 1.0,
+      "battery_room_air_changes_per_hour": 6.0
+    },
+    "NEC": {
+      "ups_topology": "True Online Double-Conversion",
+      "nominal_voltage_v": 480.0,
+      "frequency_hz": 60.0,
+      "inverter_efficiency_percent": 95.0,
+      "rectifier_thdi_percent": 3.0,
+      "standard_battery_string_dc_voltage_v": 480.0,
+      "nominal_cell_voltage_v": 2.0,
+      "cells_per_12v_block": 6,
+      "end_of_discharge_cell_voltage_v": 1.67,
+      "battery_aging_factor": 1.25,
+      "battery_temperature_derating_factor_25c": 1.0,
+      "standard_backup_durations_minutes": [15.0, 30.0, 60.0],
+      "battery_room_hydrogen_limit_percent": 1.0,
+      "battery_room_air_changes_per_hour": 6.0
+    },
+    "ECP": {
+      "ups_topology": "VFI-SS-111 Online Double-Conversion",
+      "nominal_voltage_v": 380.0,
+      "frequency_hz": 50.0,
+      "inverter_efficiency_percent": 94.0,
+      "rectifier_thdi_percent": 4.0,
+      "standard_battery_string_dc_voltage_v": 384.0,
+      "nominal_cell_voltage_v": 2.0,
+      "cells_per_12v_block": 6,
+      "end_of_discharge_cell_voltage_v": 1.67,
+      "battery_aging_factor": 1.25,
+      "battery_temperature_derating_factor_25c": 1.0,
+      "standard_backup_durations_minutes": [15.0, 30.0, 60.0],
+      "battery_room_hydrogen_limit_percent": 1.0,
+      "battery_room_air_changes_per_hour": 6.0
+    }
+  }
+}
