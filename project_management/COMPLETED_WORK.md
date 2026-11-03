@@ -270,11 +270,17 @@
   - Multi-deliverables generated in `output/power_factor_correction/`: Calculation note, AutoCAD APFC Panel Elevation & Detuned Step Schematic DXF, Excel Step Schedule & Power Quality Metrics.
   - Unit tests: `tests/test_power_factor_correction.py` (2 tests passing).
 
+- [x] **Module E12: Public Address & Voice Alarm (PA/VA) Evacuation System (`electrical/low_current_elv/public_address_pava/`)**:
+  - `rules.json`: BS 5839-8, EN 54-16, EN 54-24, SBC 801 standards, 100V line, minimum SNR $\ge 10\text{ dB(A)}$, emergency SPL ($65 - 105\text{ dB(A)}$), STI $\ge 0.50$, A/B dual interleaved wiring, 24h standby + 30m full voice alarm battery sizing.
+  - `SKILL.md`: Inverse square law acoustic coverage, ceiling speaker polar dispersion spacing, 100V line multi-tappings, dual interleaved Circuit A / Circuit B allocation on FP200 cables, modular Class-D amplifiers with $N+1$ hot-standby failover, and FACP phased evacuation matrices.
+  - Multi-deliverables generated in `output/public_address_pava/`: Calculation note, AutoCAD Egress Corridor A/B Layout & 19" Rack Elevation DXF, Excel Acoustic Schedule & BOQ.
+  - Unit tests: `tests/test_public_address_pava.py` (2 tests passing).
+
 ---
 
 ## 9. Verification & Test Summary
-- **Total Test Suites**: 24 test files.
-- **Total Unit Tests Executed**: **72 tests** across all 4 engineering disciplines with unprecedented depth across the Electrical Engineering tracks.
-- **Pass Rate**: **100% (72/72 passing, 0 errors, 0 failures in ~0.76s)**.
+- **Total Test Suites**: 25 test files.
+- **Total Unit Tests Executed**: **74 tests** across all 4 engineering disciplines with unrivaled depth across Electrical & ELV Engineering tracks.
+- **Pass Rate**: **100% (74/74 passing, 0 errors, 0 failures in ~2.89s)**.
 - **GitHub Repository**: Initialized, tracked, and pushed live to `https://github.com/wabdelgilil/construction-design-guidelines-and-skills`.
 - **Deliverables Produced**: Every leaf skill produces complete professional engineering deliverables (Markdown calculation notes with LaTeX, AutoCAD `.dxf` drawings with standard engineering layers, and corporate-styled Excel `.xlsx` workbooks with live data and BOQ).

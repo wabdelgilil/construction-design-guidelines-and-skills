@@ -1,0 +1,74 @@
+{
+  "leaf_skill": "public_address_pava",
+  "sub_branch": "low_current_elv",
+  "discipline": "electrical",
+  "governing_standards": ["BS 5839-8", "EN 54-16", "EN 54-24", "NFPA 72", "SBC 801"],
+  "codes": {
+    "SBC": {
+      "distributed_line_voltage_v": 100.0,
+      "min_signal_to_noise_snr_dba": 10.0,
+      "min_emergency_spl_dba": 65.0,
+      "max_emergency_spl_dba": 105.0,
+      "min_speech_transmission_index_sti": 0.50,
+      "amplifier_headroom_safety_margin": 1.20,
+      "ab_interleaved_wiring_required": true,
+      "fire_rated_cable_standard": "FP200 / PH120 Fire Resistant",
+      "battery_standby_hours": 24.0,
+      "battery_full_alarm_minutes": 30.0,
+      "battery_aging_factor": 1.25,
+      "typical_ambient_noise_dba": {
+        "office": 55,
+        "corridor": 60,
+        "lobby": 65,
+        "retail": 70,
+        "car_park": 75,
+        "plant_room": 85
+      },
+      "speaker_tapping_options_w": [1.5, 3.0, 6.0, 15.0, 30.0]
+    },
+    "NEC": {
+      "distributed_line_voltage_v": 70.7,
+      "min_signal_to_noise_snr_dba": 15.0,
+      "min_emergency_spl_dba": 65.0,
+      "max_emergency_spl_dba": 105.0,
+      "min_speech_transmission_index_sti": 0.50,
+      "amplifier_headroom_safety_margin": 1.20,
+      "ab_interleaved_wiring_required": true,
+      "fire_rated_cable_standard": "FPLR / FPLP (NFPA 70)",
+      "battery_standby_hours": 24.0,
+      "battery_full_alarm_minutes": 30.0,
+      "battery_aging_factor": 1.25,
+      "typical_ambient_noise_dba": {
+        "office": 55,
+        "corridor": 60,
+        "lobby": 65,
+        "retail": 70,
+        "car_park": 75,
+        "plant_room": 85
+      },
+      "speaker_tapping_options_w": [1.5, 3.0, 6.0, 15.0, 30.0]
+    },
+    "ECP": {
+      "distributed_line_voltage_v": 100.0,
+      "min_signal_to_noise_snr_dba": 10.0,
+      "min_emergency_spl_dba": 65.0,
+      "max_emergency_spl_dba": 105.0,
+      "min_speech_transmission_index_sti": 0.50,
+      "amplifier_headroom_safety_margin": 1.20,
+      "ab_interleaved_wiring_required": true,
+      "fire_rated_cable_standard": "Fire-Resistant 2x1.5mm2",
+      "battery_standby_hours": 24.0,
+      "battery_full_alarm_minutes": 30.0,
+      "battery_aging_factor": 1.25,
+      "typical_ambient_noise_dba": {
+        "office": 55,
+        "corridor": 60,
+        "lobby": 65,
+        "retail": 70,
+        "car_park": 75,
+        "plant_room": 85
+      },
+      "speaker_tapping_options_w": [1.5, 3.0, 6.0, 15.0, 30.0]
+    }
+  }
+}
