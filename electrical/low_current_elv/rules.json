@@ -1,0 +1,43 @@
+{
+  "sub_branch": "low_current_elv",
+  "discipline": "electrical",
+  "description": "Shared guidelines, auxiliary voltages, battery backup times, and containment for Extra Low Voltage (ELV) systems",
+  "codes": {
+    "SBC": {
+      "nominal_dc_voltage_v": 12.0,
+      "auxiliary_dc_voltage_v": 24.0,
+      "fire_alarm_battery_backup_standby_hours": 24.0,
+      "fire_alarm_battery_backup_alarm_minutes": 15.0,
+      "access_control_battery_backup_hours": 4.0,
+      "max_cat6a_permanent_link_m": 90.0,
+      "max_cat6a_channel_m": 100.0,
+      "containment_separation_lv_power_mm": 300.0,
+      "fire_alarm_cable_type": "FP200 / Fire Resistant",
+      "failsafe_egress_fire_release_required": true
+    },
+    "NEC": {
+      "nominal_dc_voltage_v": 12.0,
+      "auxiliary_dc_voltage_v": 24.0,
+      "fire_alarm_battery_backup_standby_hours": 24.0,
+      "fire_alarm_battery_backup_alarm_minutes": 15.0,
+      "access_control_battery_backup_hours": 4.0,
+      "max_cat6a_permanent_link_m": 90.0,
+      "max_cat6a_channel_m": 100.0,
+      "containment_separation_lv_power_mm": 300.0,
+      "fire_alarm_cable_type": "FPLR / FPLP (NFPA 70)",
+      "failsafe_egress_fire_release_required": true
+    },
+    "ECP": {
+      "nominal_dc_voltage_v": 12.0,
+      "auxiliary_dc_voltage_v": 24.0,
+      "fire_alarm_battery_backup_standby_hours": 24.0,
+      "fire_alarm_battery_backup_alarm_minutes": 15.0,
+      "access_control_battery_backup_hours": 4.0,
+      "max_cat6a_permanent_link_m": 90.0,
+      "max_cat6a_channel_m": 100.0,
+      "containment_separation_lv_power_mm": 300.0,
+      "fire_alarm_cable_type": "Fire Rated 2x1.5mm2",
+      "failsafe_egress_fire_release_required": true
+    }
+  }
+}

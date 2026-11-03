@@ -240,11 +240,23 @@
   - Multi-deliverables generated in `output/emergency_lighting/`: Calculation note, AutoCAD Emergency Lighting Plan DXF, Excel CBS Schedule.
   - Unit tests: `tests/test_emergency_lighting.py` (2 tests passing).
 
+- [x] **Module E7: Access Control System (ACS) & Security Door Interlocks (`electrical/low_current_elv/access_control/`)**:
+  - `rules.json`: NFPA 101, UL 294, SBC 801 standards, holding force (600/1200 lbs maglocks, strikes), current draws, mounting heights AFF, 4-hour battery autonomy with 1.25 aging factor.
+  - `SKILL.md`: Door hardware sets, 4-door intelligent controller capacity, life safety fail-safe fire release relay (NC) interlock, emergency break glass unit (BGU) in series with lock power, auxiliary PSU and battery Ah calculation.
+  - Multi-deliverables generated in `output/access_control/`: Calculation note, AutoCAD Door Elevation & Life Safety Interlock DXF, Excel Door Hardware Schedule & BOQ.
+  - Unit tests: `tests/test_access_control.py` (2 tests passing).
+
+- [x] **Module E8: Structured Cabling Infrastructure & Telecommunications Racks (`electrical/low_current_elv/structured_cabling/`)**:
+  - `rules.json`: ANSI/TIA-568-D, ISO/IEC 11801, SBC 401 permanent link ($\le 90\text{ m}$) and channel ($\le 100\text{ m}$) limits, 42U rack space, Cat6A F/UTP, 12-core OM4 fiber backbone, minimum 25% spare U.
+  - `SKILL.md`: Work Area Outlets (WAO), 24-port patch panel count, 1:1 cable managers, 48-port PoE+ access switches, 1U fiber LIU, 42U rack elevation allocation, 30m standby UPS VA sizing.
+  - Multi-deliverables generated in `output/structured_cabling/`: Calculation note, AutoCAD 42U Rack Elevation & Fiber Riser DXF, Excel Horizontal Port Schedule & BOQ.
+  - Unit tests: `tests/test_structured_cabling.py` (2 tests passing).
+
 ---
 
 ## 9. Verification & Test Summary
-- **Total Test Suites**: 19 test files.
-- **Total Unit Tests Executed**: **62 tests** across all 4 engineering disciplines with priority depth in Electrical Engineering.
-- **Pass Rate**: **100% (62/62 passing, 0 errors, 0 failures in ~0.59s)**.
+- **Total Test Suites**: 21 test files.
+- **Total Unit Tests Executed**: **66 tests** across all 4 engineering disciplines with profound depth across the Electrical & ELV Engineering tracks.
+- **Pass Rate**: **100% (66/66 passing, 0 errors, 0 failures in ~0.70s)**.
 - **GitHub Repository**: Initialized, tracked, and pushed live to `https://github.com/wabdelgilil/construction-design-guidelines-and-skills`.
 - **Deliverables Produced**: Every leaf skill produces complete professional engineering deliverables (Markdown calculation notes with LaTeX, AutoCAD `.dxf` drawings with standard engineering layers, and corporate-styled Excel `.xlsx` workbooks with live data and BOQ).

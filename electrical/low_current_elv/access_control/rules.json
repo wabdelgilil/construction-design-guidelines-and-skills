@@ -1,0 +1,95 @@
+{
+  "leaf_skill": "access_control",
+  "sub_branch": "low_current_elv",
+  "discipline": "electrical",
+  "governing_standards": ["NFPA 101", "UL 294", "SBC 801", "EN 60839"],
+  "codes": {
+    "SBC": {
+      "fire_alarm_release_interlock": "mandatory_failsafe",
+      "emergency_break_glass_unit": "mandatory_series_lock_power",
+      "mounting_heights_mm_aff": {
+        "card_reader": 1200,
+        "request_to_exit_button": 1200,
+        "request_to_exit_pir": 2300,
+        "emergency_break_glass": 1200,
+        "door_controller_enclosure": 1800,
+        "power_supply_unit": 1800
+      },
+      "lock_holding_force_n": {
+        "maglock_standard_interior": 2700,
+        "maglock_perimeter_heavy_duty": 5300
+      },
+      "current_draw_ma": {
+        "maglock_600lbs": 500,
+        "maglock_1200lbs": 600,
+        "electric_strike": 300,
+        "card_reader": 100,
+        "biometric_reader": 250,
+        "rex_pir": 50,
+        "door_controller_base_per_door": 120
+      },
+      "default_dc_voltage_v": 12.0,
+      "battery_autonomy_hours": 4.0,
+      "battery_aging_safety_margin": 1.25,
+      "standard_battery_ah": [7.0, 12.0, 17.0, 24.0, 38.0, 65.0]
+    },
+    "NEC": {
+      "fire_alarm_release_interlock": "mandatory_failsafe",
+      "emergency_break_glass_unit": "mandatory_series_lock_power",
+      "mounting_heights_mm_aff": {
+        "card_reader": 1200,
+        "request_to_exit_button": 1200,
+        "request_to_exit_pir": 2300,
+        "emergency_break_glass": 1200,
+        "door_controller_enclosure": 1800,
+        "power_supply_unit": 1800
+      },
+      "lock_holding_force_n": {
+        "maglock_standard_interior": 2700,
+        "maglock_perimeter_heavy_duty": 5300
+      },
+      "current_draw_ma": {
+        "maglock_600lbs": 500,
+        "maglock_1200lbs": 600,
+        "electric_strike": 300,
+        "card_reader": 100,
+        "biometric_reader": 250,
+        "rex_pir": 50,
+        "door_controller_base_per_door": 120
+      },
+      "default_dc_voltage_v": 12.0,
+      "battery_autonomy_hours": 4.0,
+      "battery_aging_safety_margin": 1.25,
+      "standard_battery_ah": [7.0, 12.0, 17.0, 24.0, 38.0, 65.0]
+    },
+    "ECP": {
+      "fire_alarm_release_interlock": "mandatory_failsafe",
+      "emergency_break_glass_unit": "mandatory_series_lock_power",
+      "mounting_heights_mm_aff": {
+        "card_reader": 1200,
+        "request_to_exit_button": 1200,
+        "request_to_exit_pir": 2300,
+        "emergency_break_glass": 1200,
+        "door_controller_enclosure": 1800,
+        "power_supply_unit": 1800
+      },
+      "lock_holding_force_n": {
+        "maglock_standard_interior": 2700,
+        "maglock_perimeter_heavy_duty": 5300
+      },
+      "current_draw_ma": {
+        "maglock_600lbs": 500,
+        "maglock_1200lbs": 600,
+        "electric_strike": 300,
+        "card_reader": 100,
+        "biometric_reader": 250,
+        "rex_pir": 50,
+        "door_controller_base_per_door": 120
+      },
+      "default_dc_voltage_v": 12.0,
+      "battery_autonomy_hours": 4.0,
+      "battery_aging_safety_margin": 1.25,
+      "standard_battery_ah": [7.0, 12.0, 17.0, 24.0, 38.0, 65.0]
+    }
+  }
+}

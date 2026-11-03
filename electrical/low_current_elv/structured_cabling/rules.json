@@ -1,0 +1,65 @@
+{
+  "leaf_skill": "structured_cabling",
+  "sub_branch": "low_current_elv",
+  "discipline": "electrical",
+  "governing_standards": ["ANSI/TIA-568-D", "ISO/IEC 11801", "BICSI TDMM", "SBC 401"],
+  "codes": {
+    "SBC": {
+      "max_permanent_link_length_m": 90.0,
+      "max_channel_length_m": 100.0,
+      "standard_horizontal_cable": "Cat6A F/UTP or U/FTP 500MHz (LSZH)",
+      "standard_backbone_fiber": "12-Core OM4 Multi-Mode 50/125um (Indoor) / OS2 Single-Mode (Campus)",
+      "standard_rack_height_u": 42,
+      "rack_dimensions_mm": {
+        "width": 800,
+        "depth": 1000,
+        "height": 2000
+      },
+      "cable_manager_ratio": "1:1 with patch panels",
+      "minimum_spare_rack_u_percentage": 25.0,
+      "ports_per_work_area_outlet": 2,
+      "wap_ports_per_location": 2,
+      "cctv_ports_per_location": 1,
+      "ups_autonomy_minutes": 30.0,
+      "poe_switch_power_consumption_w": 450.0
+    },
+    "NEC": {
+      "max_permanent_link_length_m": 90.0,
+      "max_channel_length_m": 100.0,
+      "standard_horizontal_cable": "Cat6A CMP/CMR Plenum/Riser",
+      "standard_backbone_fiber": "12-Core OM4 / OS2",
+      "standard_rack_height_u": 42,
+      "rack_dimensions_mm": {
+        "width": 800,
+        "depth": 1000,
+        "height": 2000
+      },
+      "cable_manager_ratio": "1:1 with patch panels",
+      "minimum_spare_rack_u_percentage": 25.0,
+      "ports_per_work_area_outlet": 2,
+      "wap_ports_per_location": 2,
+      "cctv_ports_per_location": 1,
+      "ups_autonomy_minutes": 30.0,
+      "poe_switch_power_consumption_w": 450.0
+    },
+    "ECP": {
+      "max_permanent_link_length_m": 90.0,
+      "max_channel_length_m": 100.0,
+      "standard_horizontal_cable": "Cat6A LSZH 500MHz",
+      "standard_backbone_fiber": "12-Core OM4 / OS2",
+      "standard_rack_height_u": 42,
+      "rack_dimensions_mm": {
+        "width": 800,
+        "depth": 1000,
+        "height": 2000
+      },
+      "cable_manager_ratio": "1:1 with patch panels",
+      "minimum_spare_rack_u_percentage": 25.0,
+      "ports_per_work_area_outlet": 2,
+      "wap_ports_per_location": 2,
+      "cctv_ports_per_location": 1,
+      "ups_autonomy_minutes": 30.0,
+      "poe_switch_power_consumption_w": 450.0
+    }
+  }
+}
