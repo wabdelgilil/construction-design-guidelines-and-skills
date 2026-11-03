@@ -293,6 +293,7 @@ Target Tree Milestones:
 | **B** | Electrical | `earthing/` | `grid_and_lps/` | **COMPLETED** | Calc Note, DXF Grid, XLSX Schedule |
 | **B** | Electrical | `elv_fire_alarm/` | `addressable_loop/` | **COMPLETED** | Calc Note, DXF Plan, XLSX Schedule |
 | **B** | Electrical | `elv_pava/` | `acoustics_and_amps/` | **COMPLETED** | Calc Note, DXF Layout & Rack, XLSX Schedule |
+| **B** | Electrical | `elv_bms/` | `points_and_ddc/` | **COMPLETED** | Calc Note, DXF Architecture, XLSX Schedule |
 | **B** | Electrical | `elv_access_control/` | `doors_and_interlocks/` | **COMPLETED** | Calc Note, DXF Elevation, XLSX Schedule |
 | **B** | Electrical | `elv_structured_cabling/` | `racks_and_backbone/` | **COMPLETED** | Calc Note, DXF Elevation, XLSX Schedule |
 | **B** | Electrical | `cctv_security/` | `dori_and_storage/` | **COMPLETED** | Calc Note, DXF Layout, XLSX Schedule |

@@ -276,11 +276,17 @@
   - Multi-deliverables generated in `output/public_address_pava/`: Calculation note, AutoCAD Egress Corridor A/B Layout & 19" Rack Elevation DXF, Excel Acoustic Schedule & BOQ.
   - Unit tests: `tests/test_public_address_pava.py` (2 tests passing).
 
+- [x] **Module E13: Building Management System (BMS) & DDC Automation Control (`electrical/low_current_elv/bms_automation/`)**:
+  - `rules.json`: ASHRAE 135 (BACnet), ISO 16484, SBC 601 energy standards, native BACnet/IP backbone, BACnet MS/TP field bus, 20% mandatory spare capacity per DDC panel, 24V AC/DC power supply, 2.0h UPS autonomy.
+  - `SKILL.md`: MEP hardware point categorization (DI status/alarms, DO start/stop, AI sensors, AO modulating actuators), base DDC (32-point) & expansion module (16-point) sizing, High-Level Interfaces (HLI Modbus for VFDs/power meters, BACnet/IP for chillers), and Three-Tier BACnet network hierarchy.
+  - Multi-deliverables generated in `output/bms_automation/`: Calculation note, AutoCAD Three-Tier BACnet Architecture & AHU DDC Hookup DXF, Excel MEP Point Schedule & DDC Sizing BOQ.
+  - Unit tests: `tests/test_bms_automation.py` (2 tests passing).
+
 ---
 
 ## 9. Verification & Test Summary
-- **Total Test Suites**: 25 test files.
-- **Total Unit Tests Executed**: **74 tests** across all 4 engineering disciplines with unrivaled depth across Electrical & ELV Engineering tracks.
-- **Pass Rate**: **100% (74/74 passing, 0 errors, 0 failures in ~2.89s)**.
+- **Total Test Suites**: 26 test files.
+- **Total Unit Tests Executed**: **76 tests** across all 4 engineering disciplines with unrivaled depth across Electrical & ELV Engineering tracks.
+- **Pass Rate**: **100% (76/76 passing, 0 errors, 0 failures in ~7.0s)**.
 - **GitHub Repository**: Initialized, tracked, and pushed live to `https://github.com/wabdelgilil/construction-design-guidelines-and-skills`.
 - **Deliverables Produced**: Every leaf skill produces complete professional engineering deliverables (Markdown calculation notes with LaTeX, AutoCAD `.dxf` drawings with standard engineering layers, and corporate-styled Excel `.xlsx` workbooks with live data and BOQ).

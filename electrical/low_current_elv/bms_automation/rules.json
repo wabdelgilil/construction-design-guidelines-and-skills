@@ -1,0 +1,44 @@
+{
+  "leaf_skill": "bms_automation",
+  "sub_branch": "low_current_elv",
+  "discipline": "electrical",
+  "governing_standards": ["ASHRAE 135 (BACnet)", "ISO 16484", "SBC 601", "SBC 401"],
+  "codes": {
+    "SBC": {
+      "primary_network_protocol": "BACnet/IP (Ethernet Cat6A)",
+      "field_bus_protocol": "BACnet MS/TP (RS-485 2-wire shielded)",
+      "energy_meter_protocol": "Modbus RTU / Modbus TCP",
+      "minimum_spare_io_percentage": 20.0,
+      "ddc_operating_voltage_v": 24.0,
+      "max_mstp_segment_length_m": 1200.0,
+      "max_mstp_devices_per_segment": 32,
+      "analog_signal_standards": ["0-10V DC", "4-20 mA", "Pt1000 RTD", "NTC 10k"],
+      "ddc_enclosure_protection": "IP54 sheet steel wall mounted",
+      "ups_power_backup_hours": 2.0
+    },
+    "NEC": {
+      "primary_network_protocol": "BACnet/IP",
+      "field_bus_protocol": "BACnet MS/TP",
+      "energy_meter_protocol": "Modbus RTU / TCP",
+      "minimum_spare_io_percentage": 20.0,
+      "ddc_operating_voltage_v": 24.0,
+      "max_mstp_segment_length_m": 1200.0,
+      "max_mstp_devices_per_segment": 32,
+      "analog_signal_standards": ["0-10V DC", "4-20 mA"],
+      "ddc_enclosure_protection": "NEMA 12 / NEMA 4",
+      "ups_power_backup_hours": 2.0
+    },
+    "ECP": {
+      "primary_network_protocol": "BACnet/IP",
+      "field_bus_protocol": "BACnet MS/TP",
+      "energy_meter_protocol": "Modbus RTU",
+      "minimum_spare_io_percentage": 20.0,
+      "ddc_operating_voltage_v": 24.0,
+      "max_mstp_segment_length_m": 1200.0,
+      "max_mstp_devices_per_segment": 32,
+      "analog_signal_standards": ["0-10V DC", "4-20 mA", "Pt1000"],
+      "ddc_enclosure_protection": "IP54",
+      "ups_power_backup_hours": 2.0
+    }
+  }
+}

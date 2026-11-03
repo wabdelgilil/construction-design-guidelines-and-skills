@@ -2,7 +2,7 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Tests Passing](https://img.shields.io/badge/tests-74%20passed-success.svg)](#verification--test-suite)
+[![Tests Passing](https://img.shields.io/badge/tests-76%20passed-success.svg)](#verification--test-suite)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Disciplines](https://img.shields.io/badge/Disciplines-Structural%20%7C%20Electrical%20%7C%20Mechanical%20%7C%20Architectural-orange.svg)](#-multi-disciplinary-design-skills-matrix)
 
@@ -50,6 +50,7 @@ It bridges the gap between building codes, software engineering, and physical co
 | **Electrical** | Low Current / ELV | [`public_address_pava`](electrical/low_current_elv/public_address_pava/SKILL.md) | BS 5839-8, EN 54-16, SBC 801 | SPL & STI acoustics, 100V A/B circuit interleaving, N+1 Class-D amps, DXF |
 | **Electrical** | Low Current / ELV | [`access_control`](electrical/low_current_elv/access_control/SKILL.md) | NFPA 101, UL 294, SBC 801 | Maglocks, Fail-safe fire relay, BGU, 4h PSU battery Ah, DXF Elevation |
 | **Electrical** | Low Current / ELV | [`structured_cabling`](electrical/low_current_elv/structured_cabling/SKILL.md) | ANSI/TIA-568-D, ISO/IEC 11801 | Work Area Outlets, 42U Rack Elevation, OM4 Fiber backbone, UPS, DXF |
+| **Electrical** | Low Current / ELV | [`bms_automation`](electrical/low_current_elv/bms_automation/SKILL.md) | ASHRAE 135 (BACnet), ISO 16484 | MEP I/O point schedule, 20% spare capacity, DDC sizing, BACnet/IP DXF |
 | **Electrical** | Security | [`cctv_security`](electrical/cctv_security/SKILL.md) | EN 62676-4, NFPA 730 | DORI optical criteria, Lens focal length, NVR RAID storage, PoE, DXF |
 | **Electrical** | Specialized | [`medical_isolated_ips`](electrical/power_distribution/medical_isolated_power_ips/SKILL.md) | IEC 60364-7-710, NFPA 99, SBC 401 | Medical isolation transformer, IMD alarm, POAG busbar, SLD DXF |
 | **Mechanical** | HVAC | [`heat_load`](mechanical/hvac/heat_load/SKILL.md) | SBC 501, ASHRAE 62.1 | Sensible/latent heat balance, Tonnage (TR), CFM, Ducting & Diffuser DXF |
