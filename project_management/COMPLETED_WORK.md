@@ -202,8 +202,49 @@
 
 ---
 
-## 8. Verification & Test Summary
-- **Total Test Suites**: 13 test files (`test_resolver.py`, `test_exporters.py`, `test_interface_coordinator.py`, `test_electrical_engines.py`, `test_isolated_footing.py`, `test_strap_footing.py`, `test_combined_footing.py`, `test_columns.py`, `test_sockets.py`, `test_lighting_skill.py`, `test_medical_ips.py`, `test_hvac.py`, `test_plumbing.py`, `test_space_planning.py`, `test_life_safety.py`).
-- **Total Unit Tests Executed**: **47 tests** across all 4 engineering disciplines.
-- **Pass Rate**: **100% (47/47 passing, 0 errors, 0 failures)**.
-- **Deliverables Produced**: All 4 disciplines now generate deterministic Markdown calculation notes, AutoCAD `.dxf` drawings with multi-layer color coding, and corporate-styled Excel `.xlsx` workbooks with live data and BOQs.
+## 8. Electrical Engineering Track Acceleration (Phases 15-20 / Modules E1-E6)
+
+- [x] **Module E1 (Phase 16): Cable Sizing & Cable Tray Containment (`electrical/cables/`)**:
+  - `rules.json`: Current carrying capacity tables for XLPE/PVC Cu conductors, group derating factors ($C_g$), ambient temp derating ($C_a$), and tray fill factor limits (40% power, 50% control) under IEC 60364-5-52 and SBC 401.
+  - `SKILL.md`: Tri-criteria cable sizing (continuous current $I_b \le I_n \le I_z$, iterative voltage drop $\le 2\%$ sub-mains / $\le 3\%$ branch, adiabatic short-circuit withstand $S \ge \frac{I_{sc}\sqrt{t}}{k}$).
+  - `scripts/cable_engine.py` & `scripts/run_design.py`: Automated multi-deliverables generation in `output/cables/`.
+  - Unit tests: `tests/test_cables_skill.py` (3 tests passing).
+
+- [x] **Module E2 (Phase 17): Substation, Transformer, Diesel Generator & MDB Sizing (`electrical/power_distribution/substation/`)**:
+  - `rules.json`: Standard oil/dry transformer ratings (500-2500 kVA), 80% loading limit, prospective $I_{sc}$ calculations, generator motor starting kVA, and 4-pole ATS interlocks.
+  - `SKILL.md`: Maximum diversified demand solver, transformer secondary current $I_{sec}$, symmetrical fault current $I_{sc} = \frac{S_n}{\sqrt{3} \times V \times Z\%}$, drawout ACB sizing ($I_{cu} \ge 1.25 \times I_{sc}$), emergency diesel generator sizing with motor inrush voltage dip $< 15\%$.
+  - Multi-deliverables generated in `output/substation/`: Calculation note, AutoCAD Substation Equipment Layout DXF, Excel Load Schedule & Sizing.
+  - Unit tests: `tests/test_substation.py` (2 tests passing).
+
+- [x] **Module E3 (Phase 18): Earthing Grid & Lightning Protection System (`electrical/earthing/`)**:
+  - `rules.json`: Soil resistivity ranges, Dwight's single rod resistance formula, buried 70mm² copper loop resistance, target earth resistance ($\le 1.0\ \Omega$ substation, $\le 5.0\ \Omega$ building), and IEC 62305 / NFPA 780 LPS Class I-IV rolling sphere radii.
+  - `SKILL.md`: Dwight's rod formula, parallel array sizing, mesh perimeter loop resistance, rolling sphere coverage, air terminal and down conductor test links.
+  - Multi-deliverables generated in `output/earthing/`: Calculation note, AutoCAD Earthing Grid & LPS DXF, Excel Earthing Sizing Sheet.
+  - Unit tests: `tests/test_earthing_skill.py` (3 tests passing).
+
+- [x] **Module E4 (Phase 15): Addressable Fire Alarm System (`electrical/low_current_elv/fire_alarm/`)**:
+  - `rules.json`: NFPA 72 and SBC 801 addressable fire alarm, optical smoke coverage ($81\text{ m}^2$) / rate-of-rise heat ($49\text{ m}^2$), manual call point max spacing ($30\text{ m}$), sounder/strobes candela, loop capacity ($< 127$ pts, $20\%$ spare), 24h standby + 15m alarm battery sizing.
+  - `SKILL.md`: Detector spacing, loop allocation, battery Ah calculation, and cross-discipline interfaces (HVAC fire dampers, elevator recall, fire pump run/trip).
+  - Multi-deliverables generated in `output/fire_alarm/`: Calculation note, AutoCAD Fire Alarm Plan DXF, Excel Loop Schedule.
+  - Unit tests: `tests/test_fire_alarm.py` (3 tests passing).
+
+- [x] **Module E5 (Phase 19): CCTV Video Surveillance & Storage Sizing (`electrical/cctv_security/`)**:
+  - `rules.json`: EN 62676-4 / NFPA 730 DORI criteria (Identification 250 PPM, Recognition 125 PPM, Observation 62.5 PPM, Detection 25 PPM), focal length equations, H.264/H.265 bitrates, RAID 5/6 storage overhead, and PoE budgets.
+  - `SKILL.md`: Focal length selection $f = \frac{h \times D}{HFOV}$, HFOV solver, recording days retention storage in TB, enterprise HDD quantities, PoE switch port power budget.
+  - Multi-deliverables generated in `output/cctv/`: Calculation note, AutoCAD CCTV Layout DXF, Excel Camera Schedule & Storage Sizing.
+  - Unit tests: `tests/test_cctv_skill.py` (2 tests passing).
+
+- [x] **Module E6 (Phase 20): Emergency & Exit Lighting (CBS & Self-Contained) (`electrical/lighting/emergency_lighting/`)**:
+  - `rules.json`: NFPA 101, BS 5266, SBC 801 egress lux criteria ($\ge 1.0\text{ Lux}$ along escape centerline, $\ge 0.5\text{ Lux}$ anti-panic open areas), 90-minute autonomy, Central Battery System (CBS) inverter and 220V DC battery sizing, FP200 fire-rated cabling.
+  - `SKILL.md`: Luminaire spacing along escape paths ($S \le 3.0 \times H$), staircase landing coverage, EXIT sign visibility, CBS inverter VA and battery Ah calculation.
+  - Multi-deliverables generated in `output/emergency_lighting/`: Calculation note, AutoCAD Emergency Lighting Plan DXF, Excel CBS Schedule.
+  - Unit tests: `tests/test_emergency_lighting.py` (2 tests passing).
+
+---
+
+## 9. Verification & Test Summary
+- **Total Test Suites**: 19 test files.
+- **Total Unit Tests Executed**: **62 tests** across all 4 engineering disciplines with priority depth in Electrical Engineering.
+- **Pass Rate**: **100% (62/62 passing, 0 errors, 0 failures in ~0.59s)**.
+- **GitHub Repository**: Initialized, tracked, and pushed live to `https://github.com/wabdelgilil/construction-design-guidelines-and-skills`.
+- **Deliverables Produced**: Every leaf skill produces complete professional engineering deliverables (Markdown calculation notes with LaTeX, AutoCAD `.dxf` drawings with standard engineering layers, and corporate-styled Excel `.xlsx` workbooks with live data and BOQ).

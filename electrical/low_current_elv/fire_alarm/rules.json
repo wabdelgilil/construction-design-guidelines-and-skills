@@ -1,0 +1,54 @@
+{
+  "node_type": "leaf",
+  "discipline": "electrical",
+  "category": "low_current_elv",
+  "sub_category": "life_safety_and_fire",
+  "system": "addressable_fire_alarm",
+  "applicable_standards": [
+    "NFPA 72 (National Fire Alarm and Signaling Code)",
+    "SBC 801 (Saudi Fire Protection Code)",
+    "EN 54 (Fire detection and fire alarm systems)"
+  ],
+  "detector_coverage": {
+    "optical_smoke_detector": {
+      "max_spacing_m": 9.1,
+      "max_coverage_area_m2": 81.0,
+      "coverage_radius_m": 6.4,
+      "ceiling_height_max_m": 10.5
+    },
+    "heat_detector_rate_of_rise": {
+      "max_spacing_m": 7.0,
+      "max_coverage_area_m2": 49.0,
+      "coverage_radius_m": 4.9,
+      "ceiling_height_max_m": 4.5
+    },
+    "manual_call_point_mcp": {
+      "max_travel_distance_m": 30.0,
+      "mounting_height_aff_m": 1.20,
+      "exit_door_proximity_max_m": 1.5
+    }
+  },
+  "sounder_strobe_standards": {
+    "min_sound_level_dba": 75.0,
+    "min_ambient_differential_dba": 15.0,
+    "strobe_flash_rate_hz": 1.0,
+    "strobe_candela_by_room_dimension": {
+      "6x6_m": 15,
+      "9x9_m": 30,
+      "12x12_m": 75,
+      "15x15_m": 110,
+      "18x18_m": 135
+    }
+  },
+  "loop_specifications": {
+    "max_devices_per_loop": 127,
+    "recommended_spare_capacity_pct": 20.0,
+    "max_loop_wire_resistance_ohms": 25.0,
+    "standard_cable_type": "2x1.5 mm² Fire-Resistant Shielded Twisted Pair (FP200 / PH120)"
+  },
+  "battery_calculation": {
+    "standby_hours": 24.0,
+    "alarm_duration_minutes": 15.0,
+    "safety_aging_factor": 1.25
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "node_type": "leaf",
+  "discipline": "electrical",
+  "category": "lighting_systems",
+  "sub_category": "emergency_and_exit_lighting",
+  "applicable_standards": [
+    "NFPA 101 (Life Safety Code - Emergency Lighting)",
+    "BS 5266-1 (Emergency lighting - Code of practice)",
+    "SBC 801 (Saudi Fire Protection Code - Emergency Evacuation)",
+    "EN 1838 (Lighting applications - Emergency lighting)"
+  ],
+  "illuminance_levels_lux": {
+    "escape_route_centerline_min_lux": 1.0,
+    "escape_route_central_band_half_width_min_lux": 0.5,
+    "open_anti_panic_area_min_lux": 0.5,
+    "high_risk_task_area_pct": 10.0,
+    "high_risk_task_area_min_lux": 15.0,
+    "first_aid_post_and_fire_alarm_call_point_min_lux": 5.0
+  },
+  "battery_autonomy": {
+    "NFPA_101_standard_minutes": 90.0,
+    "BS_5266_standard_hours": 3.0,
+    "aging_safety_margin": 1.25
+  },
+  "cbs_central_battery_system": {
+    "standard_dc_bus_voltages": [110.0, 220.0],
+    "inverter_efficiency": 0.90,
+    "sub_circuit_max_load_watts": 800.0,
+    "sub_circuit_max_luminaires": 20
+  }
+}

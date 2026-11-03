@@ -1,0 +1,43 @@
+{
+  "node_type": "leaf",
+  "discipline": "electrical",
+  "category": "power_systems",
+  "sub_category": "substations_and_sources",
+  "applicable_standards": [
+    "IEC 60076 (Power transformers)",
+    "SBC 401 (Saudi Electrical Code - Substation & Incomers)",
+    "ISO 8528 (Reciprocating internal combustion engine driven alternating current generating sets)",
+    "NFPA 110 (Standard for Emergency and Standby Power Systems)"
+  ],
+  "transformer_standards": {
+    "primary_voltage_kv": 13.8,
+    "secondary_voltage_v": 400.0,
+    "frequency_hz": 60.0,
+    "standard_ratings_kva": [500, 630, 800, 1000, 1250, 1500, 1600, 2000, 2500],
+    "target_max_loading_ratio": 0.80,
+    "standard_impedance_uk_pct": {
+      "500_to_630": 4.5,
+      "800_to_1250": 5.0,
+      "1500_to_2500": 6.0
+    }
+  },
+  "diesel_generator_standards": {
+    "voltage_v": 400.0,
+    "power_factor": 0.80,
+    "standard_standby_ratings_kva": [100, 150, 200, 250, 350, 500, 650, 800, 1000, 1250],
+    "max_transient_voltage_dip_pct": 15.0,
+    "motor_starting_inrush_multiplier": 6.0
+  },
+  "demand_factors_by_load_type": {
+    "lighting": 0.90,
+    "general_sockets": 0.50,
+    "hvac_chillers": 0.85,
+    "elevators": 0.70,
+    "plumbing_pumps": 0.60,
+    "data_center_ups": 1.00
+  },
+  "main_breaker_types": {
+    "up_to_630A": "MCCB (Molded Case Circuit Breaker)",
+    "800A_and_above": "ACB (Air Circuit Breaker) 3P or 4P Drawout Type"
+  }
+}

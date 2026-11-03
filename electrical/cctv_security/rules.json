@@ -1,0 +1,36 @@
+{
+  "node_type": "leaf",
+  "discipline": "electrical",
+  "category": "low_current_elv",
+  "sub_category": "security_systems",
+  "system": "cctv_video_surveillance",
+  "applicable_standards": [
+    "EN 62676-4 (Video surveillance systems for use in security applications)",
+    "NFPA 730 (Guide for Premises Security)",
+    "MOI / Police Security Surveillance Directives"
+  ],
+  "dori_resolution_pixels_per_meter": {
+    "detection": 25,
+    "observation": 62.5,
+    "recognition": 125,
+    "identification": 250
+  },
+  "standard_camera_sensors": {
+    "1_over_2_8_inch": { "sensor_width_mm": 5.2, "sensor_height_mm": 3.9 },
+    "1_over_3_inch": { "sensor_width_mm": 4.8, "sensor_height_mm": 3.6 }
+  },
+  "standard_focal_lengths_mm": [2.8, 4.0, 6.0, 8.0, 12.0],
+  "bitrate_mbps_h265_20fps": {
+    "1080p_2mp": 1.5,
+    "1440p_4mp": 2.5,
+    "4k_8mp": 4.0
+  },
+  "poe_standards_watts": {
+    "poe_af_class_3_fixed_dome": 15.4,
+    "poe_plus_at_class_4_ptz": 30.0
+  },
+  "raid_redundancy": {
+    "RAID_5": { "parity_drives": 1, "efficiency_factor": 0.80 },
+    "RAID_6": { "parity_drives": 2, "efficiency_factor": 0.70 }
+  }
+}

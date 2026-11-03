@@ -37,6 +37,31 @@ STANDARD_BREAKERS = [6, 10, 16, 20, 25, 32, 40, 50, 63, 80, 100, 125, 160, 200, 
 
 
 @dataclass
+class FeederRequest:
+    tag: str
+    description: str
+    load_kw: float
+    length_m: float
+    phases: int = 3
+    power_factor: float = 0.85
+    is_branch_circuit: bool = False
+
+
+@dataclass
+class CableTraySizingResult:
+    tray_tag: str
+    cables_count: int
+    total_cables_cross_section_mm2: float
+    max_fill_ratio_allowed_pct: float
+    min_required_tray_area_mm2: float
+    selected_tray_width_mm: int
+    selected_tray_depth_mm: int
+    actual_tray_area_mm2: float
+    achieved_fill_ratio_pct: float
+    status: str
+
+
+@dataclass
 class CableSizingResult:
     load_kw: float
     power_factor: float
@@ -51,6 +76,8 @@ class CableSizingResult:
     voltage_drop_pct: float
     max_allowed_drop_pct: float
     compliance_status: str
+    short_circuit_withstand_ka: float = 0.0
+    approx_outer_diameter_mm: float = 0.0
     summary: Dict[str, Any] = field(default_factory=dict)
 
 
@@ -129,6 +156,14 @@ class CableEngine:
 
         size_sqmm, ampacity_iz, _, _ = selected_cable
 
+        # Adiabatic Short Circuit Thermal Withstand (kA for t = 0.1s, k = 143 for Cu/XLPE)
+        # Isc = (k * S) / sqrt(t) -> in kA
+        sc_withstand_ka = round((143.0 * size_sqmm) / (math.sqrt(0.1) * 1000.0), 1)
+
+        # Approximate 4-Core XLPE outer diameter (mm)
+        # Empirical standard: OD ~ 3.5 * sqrt(size) + 8
+        approx_od = round(3.5 * math.sqrt(size_sqmm) + 8.0, 1)
+
         is_safe = vd_pct <= max_allowed_pct and ampacity_iz >= ib
 
         return CableSizingResult(
@@ -145,10 +180,51 @@ class CableEngine:
             voltage_drop_pct=round(vd_pct, 2),
             max_allowed_drop_pct=max_allowed_pct,
             compliance_status="SAFE" if is_safe else "EXCEEDS_DROP",
+            short_circuit_withstand_ka=sc_withstand_ka,
+            approx_outer_diameter_mm=approx_od,
             summary={
                 "breaker": f"{breaker_in} A",
                 "cable_size": f"{size_sqmm} mm2 Cu/XLPE",
                 "voltage_drop": f"{vd_pct:.2f}% (Limit: {max_allowed_pct}%)",
                 "status": "SAFE" if is_safe else "EXCEEDED",
             },
+        )
+
+    @classmethod
+    def size_cable_tray(
+        cls,
+        tray_tag: str,
+        cable_diameters_mm: List[float],
+        standard_depth_mm: int = 50,
+        max_fill_ratio_pct: float = 40.0,
+    ) -> CableTraySizingResult:
+        """Sizes standard perforated cable tray based on cable cross-sections and 40% fill limit."""
+        # Sum of cross-sectional areas of all cables
+        total_cable_area = sum(math.pi * ((d / 2.0) ** 2) for d in cable_diameters_mm)
+
+        # Min tray cross-section: A_tray >= A_cables / fill_ratio
+        req_tray_area = total_cable_area / (max_fill_ratio_pct / 100.0)
+
+        # Standard tray widths (mm)
+        standard_widths = [100, 150, 200, 300, 450, 600, 750, 900]
+        selected_width = standard_widths[-1]
+        for w in standard_widths:
+            if (w * standard_depth_mm) >= req_tray_area:
+                selected_width = w
+                break
+
+        actual_tray_area = selected_width * standard_depth_mm
+        achieved_fill = round((total_cable_area / actual_tray_area) * 100.0, 1)
+
+        return CableTraySizingResult(
+            tray_tag=tray_tag,
+            cables_count=len(cable_diameters_mm),
+            total_cables_cross_section_mm2=round(total_cable_area, 1),
+            max_fill_ratio_allowed_pct=max_fill_ratio_pct,
+            min_required_tray_area_mm2=round(req_tray_area, 1),
+            selected_tray_width_mm=selected_width,
+            selected_tray_depth_mm=standard_depth_mm,
+            actual_tray_area_mm2=round(actual_tray_area, 1),
+            achieved_fill_ratio_pct=achieved_fill,
+            status="COMPLIANT" if achieved_fill <= max_fill_ratio_pct else "OVERFILLED",
         )

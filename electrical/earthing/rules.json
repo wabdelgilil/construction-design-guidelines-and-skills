@@ -1,0 +1,36 @@
+{
+  "node_type": "leaf",
+  "discipline": "electrical",
+  "category": "protection_and_earthing",
+  "sub_category": "earthing_and_lightning_protection",
+  "applicable_standards": [
+    "IEEE 80 (Guide for Safety in AC Substation Grounding)",
+    "IEC 60364-5-54 (Earthing arrangements and protective conductors)",
+    "IEC 62305-1..4 (Protection against lightning)",
+    "NFPA 780 (Standard for the Installation of Lightning Protection Systems)",
+    "SBC 401 (Saudi Electrical Code - Grounding & Bonding)"
+  ],
+  "target_maximum_resistance_ohms": {
+    "electrical_substation": 1.0,
+    "commercial_building": 5.0,
+    "telecom_data_center": 1.0,
+    "hospital_isolated_ground": 1.0,
+    "lightning_protection_pit": 10.0
+  },
+  "standard_earth_rods": {
+    "material": "Copper-bonded high-tensile steel (min 254 microns copper)",
+    "diameter_options_in": [0.625, 0.75],
+    "length_options_m": [2.4, 3.0, 6.0]
+  },
+  "lightning_protection_levels": {
+    "LPL_I": { "rolling_sphere_radius_m": 20.0, "down_conductor_spacing_m": 10.0, "mesh_size_m": 5.0 },
+    "LPL_II": { "rolling_sphere_radius_m": 30.0, "down_conductor_spacing_m": 10.0, "mesh_size_m": 10.0 },
+    "LPL_III": { "rolling_sphere_radius_m": 45.0, "down_conductor_spacing_m": 15.0, "mesh_size_m": 15.0 },
+    "LPL_IV": { "rolling_sphere_radius_m": 60.0, "down_conductor_spacing_m": 20.0, "mesh_size_m": 20.0 }
+  },
+  "conductors": {
+    "earth_grid_buried_conductor": "70 mm² Bare Hard-Drawn Stranded Copper",
+    "down_conductor_tape": "25 x 3 mm Bare Copper Tape (or 50 mm² Copper Rope)",
+    "main_equipotential_bonding_mm2": 25.0
+  }
+}

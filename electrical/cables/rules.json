@@ -1,0 +1,44 @@
+{
+  "node_type": "leaf",
+  "discipline": "electrical",
+  "category": "cables_and_containment",
+  "sub_category": "cable_sizing_and_trays",
+  "applicable_standards": [
+    "IEC 60364-5-52 (Selection and erection of electrical equipment - Wiring systems)",
+    "SBC 401 (Saudi Electrical Code - Cables & Sizing)",
+    "BS 7671 (Requirements for Electrical Installations - IET Wiring Regulations)"
+  ],
+  "insulation_types": {
+    "XLPE": { "max_operating_temp_c": 90.0, "short_circuit_temp_c": 250.0, "k_factor_copper": 143.0 },
+    "PVC": { "max_operating_temp_c": 70.0, "short_circuit_temp_c": 160.0, "k_factor_copper": 115.0 },
+    "LSZH_FR": { "max_operating_temp_c": 90.0, "short_circuit_temp_c": 250.0, "k_factor_copper": 143.0 }
+  },
+  "ambient_temp_derating_xlpe_in_air": {
+    "30": 1.07,
+    "35": 1.04,
+    "40": 1.00,
+    "45": 0.96,
+    "50": 0.91,
+    "55": 0.87
+  },
+  "grouping_derating_in_perforated_tray": {
+    "1": 1.00,
+    "2": 0.88,
+    "3": 0.82,
+    "4": 0.77,
+    "6": 0.73,
+    "9": 0.72
+  },
+  "voltage_drop_limits_pct": {
+    "lighting_circuits": 3.0,
+    "power_branch_circuits": 3.0,
+    "main_feeders_submain": 2.0,
+    "total_source_to_load": 5.0
+  },
+  "cable_trays": {
+    "standard_widths_mm": [100, 150, 200, 300, 450, 600, 750, 900],
+    "standard_depths_mm": [50, 75, 100],
+    "max_usable_fill_ratio_pct": 40.0,
+    "future_expansion_spare_pct": 20.0
+  }
+}

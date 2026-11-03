@@ -2,7 +2,7 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Tests Passing](https://img.shields.io/badge/tests-47%20passed-success.svg)](#verification--test-suite)
+[![Tests Passing](https://img.shields.io/badge/tests-62%20passed-success.svg)](#verification--test-suite)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Disciplines](https://img.shields.io/badge/Disciplines-Structural%20%7C%20Electrical%20%7C%20Mechanical%20%7C%20Architectural-orange.svg)](#-multi-disciplinary-design-skills-matrix)
 
@@ -39,6 +39,12 @@ It bridges the gap between building codes, software engineering, and physical co
 | **Structural** | Columns | [`columns`](structural/vertical_elements/columns/SKILL.md) | SBC 304, ACI 318, ECP 203 | Slenderness check, Tie spacing, Column section detailing DXF |
 | **Electrical** | Power | [`sockets`](electrical/power_distribution/sockets/SKILL.md) | SBC 401, IEC 60364, NEC | Circuit grouping, Dedicated appliance circuits, DB schedule, DXF |
 | **Electrical** | Lighting | [`lighting`](electrical/lighting/SKILL.md) | SBC 1001, ASHRAE 90.1, IESNA | Lumen method, Reflected ceiling plan DXF, LPD check, (x, y) coordinates |
+| **Electrical** | Emergency | [`emergency_lighting`](electrical/lighting/emergency_lighting/SKILL.md) | NFPA 101, BS 5266, SBC 801 | Egress lux, 90m autonomy, Central Battery System (CBS) inverter/Ah, DXF |
+| **Electrical** | Substation | [`substation`](electrical/power_distribution/substation/SKILL.md) | IEC 60076, IEEE 141, SBC 401 | Diversified demand, Transformer & Diesel Generator sizing, MDB ACB, DXF |
+| **Electrical** | Cables | [`cables`](electrical/cables/SKILL.md) | IEC 60364-5-52, SBC 401 | Continuous current, Derating, Voltage drop, Adiabatic $I_{sc}$, Tray fill DXF |
+| **Electrical** | Earthing | [`earthing`](electrical/earthing/SKILL.md) | IEEE 80, IEC 62305, NFPA 780 | Dwight's rod formula, Grid resistance, LPS Rolling Sphere, DXF |
+| **Electrical** | Low Current / ELV | [`fire_alarm`](electrical/low_current_elv/fire_alarm/SKILL.md) | NFPA 72, SBC 801 | Addressable detectors, Loop allocation, 24h+15m FACP battery, DXF |
+| **Electrical** | Security | [`cctv_security`](electrical/cctv_security/SKILL.md) | EN 62676-4, NFPA 730 | DORI optical criteria, Lens focal length, NVR RAID storage, PoE, DXF |
 | **Electrical** | Specialized | [`medical_isolated_ips`](electrical/power_distribution/medical_isolated_power_ips/SKILL.md) | IEC 60364-7-710, NFPA 99, SBC 401 | Medical isolation transformer, IMD alarm, POAG busbar, SLD DXF |
 | **Mechanical** | HVAC | [`heat_load`](mechanical/hvac/heat_load/SKILL.md) | SBC 501, ASHRAE 62.1 | Sensible/latent heat balance, Tonnage (TR), CFM, Ducting & Diffuser DXF |
 | **Mechanical** | Plumbing | [`plumbing`](mechanical/plumbing/SKILL.md) | SBC 701, IPC, ECP | DFU drainage stack, WSFU booster pump (1D+1S), Structural sleeves DXF |
@@ -97,7 +103,7 @@ construction-design-guidelines-and-skills/
 
 ### 1. Clone & Set Up
 ```bash
-git clone https://github.com/your-username/construction-design-guidelines-and-skills.git
+git clone https://github.com/wabdelgilil/construction-design-guidelines-and-skills.git
 cd construction-design-guidelines-and-skills
 pip install -r requirements.txt
 ```
