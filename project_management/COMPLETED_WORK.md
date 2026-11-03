@@ -252,11 +252,17 @@
   - Multi-deliverables generated in `output/structured_cabling/`: Calculation note, AutoCAD 42U Rack Elevation & Fiber Riser DXF, Excel Horizontal Port Schedule & BOQ.
   - Unit tests: `tests/test_structured_cabling.py` (2 tests passing).
 
+- [x] **Module E9: Short-Circuit Analysis & Protection Coordination / TCC Curves (`electrical/power_distribution/protection_coordination/`)**:
+  - `rules.json`: IEC 60909 impedance method, transformer $Z\%$, copper fault resistivity $\rho = 0.0225\ \Omega\cdot\text{mm}^2/\text{m}$, cable reactance $x_L = 0.08\ \Omega/\text{km}$, minimum $\Delta t \ge 100\text{ ms}$ time selectivity margin, breaker breaking capacities $I_{cu}$ (10-100 kA).
+  - `SKILL.md`: Positive-sequence impedance summation across MDB, SMDB, and DB levels, prospective symmetrical fault $I_{sc3\phi}$, Category B ACB short-time withstand $I_{cw}(1\text{s})$, LSIG electronic trip unit calibration (Ir, tr, Isd, tsd, Ii, Ig), and non-overlapping TCC curve selectivity verification.
+  - Multi-deliverables generated in `output/protection_coordination/`: Calculation note, AutoCAD Distribution SLD & Log-Log TCC Discrimination Curve DXF, Excel Network Impedance & Selectivity Schedule.
+  - Unit tests: `tests/test_protection_coordination.py` (2 tests passing).
+
 ---
 
 ## 9. Verification & Test Summary
-- **Total Test Suites**: 21 test files.
-- **Total Unit Tests Executed**: **66 tests** across all 4 engineering disciplines with profound depth across the Electrical & ELV Engineering tracks.
-- **Pass Rate**: **100% (66/66 passing, 0 errors, 0 failures in ~0.70s)**.
+- **Total Test Suites**: 22 test files.
+- **Total Unit Tests Executed**: **68 tests** across all 4 engineering disciplines with state-of-the-art depth across the Electrical Engineering tracks.
+- **Pass Rate**: **100% (68/68 passing, 0 errors, 0 failures in ~0.73s)**.
 - **GitHub Repository**: Initialized, tracked, and pushed live to `https://github.com/wabdelgilil/construction-design-guidelines-and-skills`.
 - **Deliverables Produced**: Every leaf skill produces complete professional engineering deliverables (Markdown calculation notes with LaTeX, AutoCAD `.dxf` drawings with standard engineering layers, and corporate-styled Excel `.xlsx` workbooks with live data and BOQ).

@@ -287,6 +287,7 @@ Target Tree Milestones:
 | **B** | Electrical | `power/` | `medical_isolated_ips/`| **COMPLETED** | Calc Note, SLD DXF, XLSX Schedule |
 | **B** | Electrical | `cables/` | `cable_and_tray/` | **COMPLETED** | Calc Note, DXF Tray, XLSX Schedule |
 | **B** | Electrical | `substation/` | `transformer_generator_mdb/` | **COMPLETED** | Calc Note, DXF Layout, XLSX Schedule |
+| **B** | Electrical | `power/` | `protection_coordination/` | **COMPLETED** | Calc Note, DXF TCC Curves, XLSX Schedule |
 | **B** | Electrical | `earthing/` | `grid_and_lps/` | **COMPLETED** | Calc Note, DXF Grid, XLSX Schedule |
 | **B** | Electrical | `elv_fire_alarm/` | `addressable_loop/` | **COMPLETED** | Calc Note, DXF Plan, XLSX Schedule |
 | **B** | Electrical | `elv_access_control/` | `doors_and_interlocks/` | **COMPLETED** | Calc Note, DXF Elevation, XLSX Schedule |
