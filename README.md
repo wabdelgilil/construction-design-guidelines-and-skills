@@ -2,7 +2,7 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Tests Passing](https://img.shields.io/badge/tests-68%20passed-success.svg)](#verification--test-suite)
+[![Tests Passing](https://img.shields.io/badge/tests-72%20passed-success.svg)](#verification--test-suite)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Disciplines](https://img.shields.io/badge/Disciplines-Structural%20%7C%20Electrical%20%7C%20Mechanical%20%7C%20Architectural-orange.svg)](#-multi-disciplinary-design-skills-matrix)
 
@@ -42,6 +42,8 @@ It bridges the gap between building codes, software engineering, and physical co
 | **Electrical** | Emergency | [`emergency_lighting`](electrical/lighting/emergency_lighting/SKILL.md) | NFPA 101, BS 5266, SBC 801 | Egress lux, 90m autonomy, Central Battery System (CBS) inverter/Ah, DXF |
 | **Electrical** | Substation | [`substation`](electrical/power_distribution/substation/SKILL.md) | IEC 60076, IEEE 141, SBC 401 | Diversified demand, Transformer & Diesel Generator sizing, MDB ACB, DXF |
 | **Electrical** | Protection | [`protection_coordination`](electrical/power_distribution/protection_coordination/SKILL.md) | IEC 60909, IEEE 242, SBC 401 | Short-circuit impedance method, LSIG trip units, Log-Log TCC curves DXF |
+| **Electrical** | Motor Control | [`motor_control_center_mcc`](electrical/power_distribution/motor_control_center_mcc/SKILL.md) | IEC 60947-4-1, IEC 61439-2 | Motor FLA, DOL/Y-Δ/VFD starters, Type 2 coordination, Form 4b MCC DXF |
+| **Electrical** | Power Quality | [`power_factor_correction`](electrical/power_distribution/power_factor_correction/SKILL.md) | IEC 61921, IEC 60831, IEEE 519 | Reactive kVAR deficit, 7% detuned anti-resonance reactors, APFC panel DXF |
 | **Electrical** | Cables | [`cables`](electrical/cables/SKILL.md) | IEC 60364-5-52, SBC 401 | Continuous current, Derating, Voltage drop, Adiabatic $I_{sc}$, Tray fill DXF |
 | **Electrical** | Earthing | [`earthing`](electrical/earthing/SKILL.md) | IEEE 80, IEC 62305, NFPA 780 | Dwight's rod formula, Grid resistance, LPS Rolling Sphere, DXF |
 | **Electrical** | Low Current / ELV | [`fire_alarm`](electrical/low_current_elv/fire_alarm/SKILL.md) | NFPA 72, SBC 801 | Addressable detectors, Loop allocation, 24h+15m FACP battery, DXF |

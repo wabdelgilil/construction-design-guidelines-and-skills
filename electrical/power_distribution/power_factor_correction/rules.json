@@ -1,0 +1,44 @@
+{
+  "leaf_skill": "power_factor_correction",
+  "sub_branch": "power_distribution",
+  "discipline": "electrical",
+  "governing_standards": ["IEC 61921", "IEC 60831-1", "IEEE 519", "SBC 401"],
+  "codes": {
+    "SBC": {
+      "nominal_voltage_v": 400.0,
+      "frequency_hz": 60.0,
+      "target_power_factor": 0.95,
+      "penalty_threshold_power_factor": 0.90,
+      "detuned_reactor_factor_standard": 0.07,
+      "detuned_tuning_frequency_hz": 227.0,
+      "capacitor_rated_voltage_min_v": 480.0,
+      "overcurrent_continuous_withstand_factor": 1.43,
+      "step_discharge_resistor_time_s": 60.0,
+      "cooling_forced_ventilation_required": true
+    },
+    "NEC": {
+      "nominal_voltage_v": 480.0,
+      "frequency_hz": 60.0,
+      "target_power_factor": 0.95,
+      "penalty_threshold_power_factor": 0.90,
+      "detuned_reactor_factor_standard": 0.07,
+      "detuned_tuning_frequency_hz": 227.0,
+      "capacitor_rated_voltage_min_v": 525.0,
+      "overcurrent_continuous_withstand_factor": 1.35,
+      "step_discharge_resistor_time_s": 60.0,
+      "cooling_forced_ventilation_required": true
+    },
+    "ECP": {
+      "nominal_voltage_v": 380.0,
+      "frequency_hz": 50.0,
+      "target_power_factor": 0.92,
+      "penalty_threshold_power_factor": 0.85,
+      "detuned_reactor_factor_standard": 0.07,
+      "detuned_tuning_frequency_hz": 189.0,
+      "capacitor_rated_voltage_min_v": 440.0,
+      "overcurrent_continuous_withstand_factor": 1.43,
+      "step_discharge_resistor_time_s": 60.0,
+      "cooling_forced_ventilation_required": true
+    }
+  }
+}

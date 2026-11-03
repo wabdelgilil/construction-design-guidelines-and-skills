@@ -1,0 +1,53 @@
+{
+  "leaf_skill": "motor_control_center_mcc",
+  "sub_branch": "power_distribution",
+  "discipline": "electrical",
+  "governing_standards": ["IEC 60947-4-1", "IEC 61439-2", "IEEE 141", "SBC 401", "NEC 430"],
+  "codes": {
+    "SBC": {
+      "nominal_voltage_v": 400.0,
+      "frequency_hz": 60.0,
+      "mcc_internal_segregation_form": "Form 4b",
+      "coordination_type": "Type 2 (IEC 60947-4-1)",
+      "starter_selection_thresholds_kw": {
+        "dol_max_kw": 7.5,
+        "star_delta_max_kw": 45.0,
+        "vfd_or_soft_starter_min_kw": 45.0
+      },
+      "cable_sizing_multiplier": 1.25,
+      "max_running_voltage_drop_percent": 3.0,
+      "max_starting_voltage_drop_percent": 12.0,
+      "overload_relay_trip_class": "Class 10 (Class 20 for high-inertia smoke exhaust)"
+    },
+    "NEC": {
+      "nominal_voltage_v": 480.0,
+      "frequency_hz": 60.0,
+      "mcc_internal_segregation_form": "NEMA Class II",
+      "coordination_type": "Type 2",
+      "starter_selection_thresholds_kw": {
+        "dol_max_kw": 7.5,
+        "star_delta_max_kw": 45.0,
+        "vfd_or_soft_starter_min_kw": 45.0
+      },
+      "cable_sizing_multiplier": 1.25,
+      "max_running_voltage_drop_percent": 3.0,
+      "max_starting_voltage_drop_percent": 12.0,
+      "overload_relay_trip_class": "Class 10"
+    },
+    "ECP": {
+      "nominal_voltage_v": 380.0,
+      "frequency_hz": 50.0,
+      "mcc_internal_segregation_form": "Form 3b / Form 4b",
+      "coordination_type": "Type 2 (IEC 60947-4-1)",
+      "starter_selection_thresholds_kw": {
+        "dol_max_kw": 7.5,
+        "star_delta_max_kw": 45.0,
+        "vfd_or_soft_starter_min_kw": 45.0
+      },
+      "cable_sizing_multiplier": 1.25,
+      "max_running_voltage_drop_percent": 3.0,
+      "max_starting_voltage_drop_percent": 12.0,
+      "overload_relay_trip_class": "Class 10"
+    }
+  }
+}

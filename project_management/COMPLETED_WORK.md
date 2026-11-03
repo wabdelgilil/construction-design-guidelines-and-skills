@@ -258,11 +258,23 @@
   - Multi-deliverables generated in `output/protection_coordination/`: Calculation note, AutoCAD Distribution SLD & Log-Log TCC Discrimination Curve DXF, Excel Network Impedance & Selectivity Schedule.
   - Unit tests: `tests/test_protection_coordination.py` (2 tests passing).
 
+- [x] **Module E10: Motor Control Center (MCC) & Motor Starters Sizing (`electrical/power_distribution/motor_control_center_mcc/`)**:
+  - `rules.json`: IEC 60947-4-1, IEC 61439-2 Form 4b internal segregation, Type 2 coordination criteria, starter selection thresholds (DOL $\le 7.5\text{kW}$, Y-$\Delta \le 45\text{kW}$, VFD / Soft Starter $> 45\text{kW}$), running and starting voltage drops ($\le 3\%$ / $\le 12\%$).
+  - `SKILL.md`: Motor FLA calculations, AC-3 contactor duty ratings, Class 10 thermal overload relays, MCP breaker sizing, continuous feeder sizing ($1.25 \times I_{FLA}$), and multi-column Form 4b cubicle layout.
+  - Multi-deliverables generated in `output/mcc/`: Calculation note, AutoCAD MCC Front Elevation & Starter Control Schematic DXF, Excel Motor Schedule & BOQ.
+  - Unit tests: `tests/test_motor_control_center.py` (2 tests passing).
+
+- [x] **Module E11: Automatic Power Factor Correction (APFC) & Detuned Filter Banks (`electrical/power_distribution/power_factor_correction/`)**:
+  - `rules.json`: IEC 61921, IEC 60831-1/2, IEEE 519 standards, target $\cos \phi \ge 0.95$, 7% series detuned anti-resonance reactor (227 Hz tuning frequency), heavy-duty 480V/525V capacitor voltage rating against fundamental voltage rise, 1.43 continuous overcurrent factor.
+  - `SKILL.md`: Reactive deficit equation $Q_c = P \times (\tan \phi_1 - \tan \phi_2)$, modular step staging ($25/50\text{ kVAR}$ base), series reactor inductance $L$ in mH, AC-6b capacitor contactors with early-make damping resistors, apparent power ($S$) capacity released in kVA, and line current reduction.
+  - Multi-deliverables generated in `output/power_factor_correction/`: Calculation note, AutoCAD APFC Panel Elevation & Detuned Step Schematic DXF, Excel Step Schedule & Power Quality Metrics.
+  - Unit tests: `tests/test_power_factor_correction.py` (2 tests passing).
+
 ---
 
 ## 9. Verification & Test Summary
-- **Total Test Suites**: 22 test files.
-- **Total Unit Tests Executed**: **68 tests** across all 4 engineering disciplines with state-of-the-art depth across the Electrical Engineering tracks.
-- **Pass Rate**: **100% (68/68 passing, 0 errors, 0 failures in ~0.73s)**.
+- **Total Test Suites**: 24 test files.
+- **Total Unit Tests Executed**: **72 tests** across all 4 engineering disciplines with unprecedented depth across the Electrical Engineering tracks.
+- **Pass Rate**: **100% (72/72 passing, 0 errors, 0 failures in ~0.76s)**.
 - **GitHub Repository**: Initialized, tracked, and pushed live to `https://github.com/wabdelgilil/construction-design-guidelines-and-skills`.
 - **Deliverables Produced**: Every leaf skill produces complete professional engineering deliverables (Markdown calculation notes with LaTeX, AutoCAD `.dxf` drawings with standard engineering layers, and corporate-styled Excel `.xlsx` workbooks with live data and BOQ).
