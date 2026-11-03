@@ -1,0 +1,42 @@
+{
+  "leaf_skill": "columns",
+  "discipline": "structural",
+  "sub_branch": "vertical_elements",
+  "level": 3,
+  "description": "Code limits and design equations for reinforced concrete short and slender tied columns",
+  "codes": {
+    "SBC": {
+      "standard_reference": "SBC 304 Section 10 & 22 / ACI 318-19",
+      "phi_tied": 0.65,
+      "phi_spiral": 0.75,
+      "axial_reduction_alpha": 0.80,
+      "min_reinforcement_ratio": 0.010,
+      "max_reinforcement_ratio": 0.040,
+      "min_column_dimension_mm": 200,
+      "min_tie_diameter_mm": 10,
+      "concrete_cover_mm": 40
+    },
+    "ACI": {
+      "standard_reference": "ACI 318-19 Chapters 10, 18 & 22",
+      "phi_tied": 0.65,
+      "phi_spiral": 0.75,
+      "axial_reduction_alpha": 0.80,
+      "min_reinforcement_ratio": 0.010,
+      "max_reinforcement_ratio": 0.040,
+      "min_column_dimension_mm": 200,
+      "min_tie_diameter_mm": 10,
+      "concrete_cover_mm": 40
+    },
+    "ECP": {
+      "standard_reference": "ECP 203-2018 Design of Tied Columns",
+      "gamma_concrete": 1.50,
+      "gamma_steel": 1.15,
+      "axial_reduction_alpha": 0.35,
+      "min_reinforcement_ratio": 0.008,
+      "max_reinforcement_ratio": 0.040,
+      "min_column_dimension_mm": 200,
+      "min_tie_diameter_mm": 8,
+      "concrete_cover_mm": 25
+    }
+  }
+}

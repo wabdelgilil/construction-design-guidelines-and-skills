@@ -1,0 +1,97 @@
+{
+  "system": "Cross-Discipline Engineering Interface Registry",
+  "version": "1.0.0",
+  "description": "Codified repository of cross-discipline dependencies, interfaces, and coordination checklists",
+  "interfaces": [
+    {
+      "id": "INT-HVAC-ELEC-01",
+      "source_discipline": "mechanical/hvac",
+      "target_discipline": "electrical/power_distribution",
+      "element": "ac_thermostat",
+      "title": "HVAC Thermostat Wall Conduit & Wiring",
+      "requirement_for_target": "Provide a wall backbox (flush mounted at 150 cm AFF) with 20mm PVC conduit and 24V / Cat6 control wiring routed to the indoor FCU/AHU in the ceiling.",
+      "code_reference": "SBC 401 / SBC 501 / ASHRAE",
+      "target_keywords": ["socket", "switch", "power", "wall outlet", "conduit", "room layout"]
+    },
+    {
+      "id": "INT-HVAC-ELEC-02",
+      "source_discipline": "mechanical/hvac",
+      "target_discipline": "electrical/power_distribution",
+      "element": "ac_outdoor_condenser",
+      "title": "Outdoor AC Condenser / Package Unit Isolator Switch",
+      "requirement_for_target": "Provide a heavy-duty weatherproof (IP65) rotary isolator switch within 1.0 meter of the outdoor unit, sized for 1.25 x Full Load Amps (FLA) with lockable handle.",
+      "code_reference": "SBC 401 Section 537 / NEC Article 440",
+      "target_keywords": ["panel", "breaker", "isolator", "outdoor", "roof", "feeder", "hvac"]
+    },
+    {
+      "id": "INT-HVAC-ELEC-03",
+      "source_discipline": "mechanical/hvac",
+      "target_discipline": "electrical/power_distribution",
+      "element": "ac_indoor_fcu",
+      "title": "Indoor FCU / Fan Coil Unit Power Feed",
+      "requirement_for_target": "Provide a 1-phase 230V unswitched fused connection unit (FCU/spur) with flex outlet in the ceiling void adjacent to the indoor air unit.",
+      "code_reference": "SBC 401 / IEC 60364",
+      "target_keywords": ["panel", "circuit", "ceiling", "ac", "hvac"]
+    },
+    {
+      "id": "INT-HVAC-ELEC-04",
+      "source_discipline": "mechanical/hvac",
+      "target_discipline": "electrical/fire_alarm",
+      "element": "motorized_fire_smoke_damper",
+      "title": "Fire/Smoke Damper Actuator Power & FACP Interlock",
+      "requirement_for_target": "Provide 24V / 230V power to duct motorized fire dampers and connect control relay module to Fire Alarm Control Panel (FACP) for auto fan shutdown upon smoke detection.",
+      "code_reference": "SBC 801 / NFPA 72 / NFPA 90A",
+      "target_keywords": ["fire alarm", "facp", "damper", "smoke", "interlock"]
+    },
+    {
+      "id": "INT-PLUMB-ELEC-01",
+      "source_discipline": "mechanical/plumbing",
+      "target_discipline": "electrical/power_distribution",
+      "element": "water_heater",
+      "title": "Domestic Water Heater Power & DP Switch",
+      "requirement_for_target": "Provide a dedicated 16A/20A branch circuit wired to a 20A Double-Pole (DP) switch with neon indicator mounted outside the bathroom at 160 cm AFF.",
+      "code_reference": "SBC 401 Section 701 (Locations containing bath/shower)",
+      "target_keywords": ["socket", "switch", "bathroom", "water heater", "heater", "dedicated circuit"]
+    },
+    {
+      "id": "INT-PLUMB-ELEC-02",
+      "source_discipline": "mechanical/plumbing",
+      "target_discipline": "electrical/power_distribution",
+      "element": "domestic_booster_pump",
+      "title": "Water Booster Pump Power & Control Panel Feed",
+      "requirement_for_target": "Provide 3-phase or 1-phase dedicated power supply from DB to pump control panel, with cabling for pressure transmitters and low-water level float switch cut-off.",
+      "code_reference": "SBC 401 / SBC 701",
+      "target_keywords": ["pump", "water", "panel", "breaker", "feeder"]
+    },
+    {
+      "id": "INT-PLUMB-STRUCT-01",
+      "source_discipline": "mechanical/plumbing",
+      "target_discipline": "structural/foundations",
+      "element": "soil_drainage_pipe_sleeve",
+      "title": "Foundation Wall / Grade Beam Pipe Sleeves",
+      "requirement_for_target": "Provide PVC or steel pipe sleeves (diameter 50mm larger than pipe) through concrete foundation walls and grade beams with water-stop gaskets, placed BEFORE concrete pouring.",
+      "code_reference": "SBC 304 Section 6.3 / SBC 701",
+      "target_keywords": ["footing", "grade beam", "foundation", "basement", "retaining wall"]
+    },
+    {
+      "id": "INT-ELEV-ALL-01",
+      "source_discipline": "architectural/transportation",
+      "target_discipline": "structural/foundations",
+      "element": "elevator_pit",
+      "title": "Elevator Structural Pit & Sump",
+      "requirement_for_target": "Depress foundation slab by minimum 1.50 meters below lowest floor level for elevator buffer springs, and provide a 600x600x600mm sump pit for drainage.",
+      "code_reference": "EN 81-20 / SBC 201 Section 30",
+      "target_keywords": ["pit", "elevator", "slab", "foundation", "raft"]
+    },
+    {
+      "id": "INT-ELEV-ALL-02",
+      "source_discipline": "architectural/transportation",
+      "target_discipline": "electrical/power_distribution",
+      "element": "elevator_machine_room",
+      "title": "Elevator Main Feeder & Machine Room Electrical",
+      "requirement_for_target": "Provide dedicated 3-phase main feeder with lockable heavy-duty circuit breaker in machine room, plus separate 1-phase circuit for car lighting and GFCI socket in pit.",
+      "code_reference": "SBC 401 / EN 81-20",
+      "target_keywords": ["elevator", "lift", "feeder", "machine room", "panel"]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "system": "CAD, BIM & Spreadsheet Scripting Heuristics",
+  "version": "1.0.0",
+  "tricks": {
+    "ezdxf": [
+      "Always set release='R2010' or 'R2018' with setup=True for maximum compatibility with AutoCAD LT and modern CAD readers.",
+      "Never call .format() on templates containing LaTeX math without escaping curly braces or using custom delimiters like {{KEY}}.",
+      "Add entities directly to Modelspace (doc.modelspace()) and assign explicit engineering layers with ACI color codes (1=Red, 2=Yellow, 3=Green, 4=Cyan).",
+      "Use add_lwpolyline with closed=True for boundaries, foundations, and room areas to ensure area queries succeed."
+    ],
+    "openpyxl": [
+      "Use data_only=False when generating live formulas (=SUM, =IF) so Excel evaluates them upon opening.",
+      "Always set explicit column widths using get_column_letter() to prevent '###' truncation errors in printed schedules.",
+      "Use corporate theme fills (Navy Blue header: 1F4E79, Soft Green safe: E2EFDA, Soft Red warning: FCE4D6)."
+    ],
+    "cad_space_extraction": [
+      "Use the Ray Casting algorithm for fast Point-in-Polygon checks to determine which room text label belongs to which polyline boundary.",
+      "Use the Shoelace formula to compute exact net polygon area in square meters.",
+      "Filter out microscopic polylines (< 1.0 m2) and colossal perimeter site boundaries (> 5000 m2) to isolate actual room spaces."
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "node_type": "leaf",
+  "discipline": "electrical",
+  "category": "lighting",
+  "target_illuminance_lux": {
+    "office_general": 400.0,
+    "office_conference": 500.0,
+    "classroom": 350.0,
+    "corridor_passageway": 100.0,
+    "staircase": 150.0,
+    "residential_living": 200.0,
+    "residential_bedroom": 150.0,
+    "residential_kitchen": 300.0,
+    "storage_warehouse": 150.0,
+    "hospital_operating_theater_ambient": 1000.0
+  },
+  "max_lpd_watts_per_m2": {
+    "SBC": {
+      "office": 9.5,
+      "school": 8.5,
+      "corridor": 4.5,
+      "residential": 8.0,
+      "hospital": 11.0
+    },
+    "ASHRAE_90_1": {
+      "office": 8.8,
+      "school": 7.8,
+      "corridor": 4.1,
+      "residential": 7.5,
+      "hospital": 10.5
+    },
+    "ECP": {
+      "office": 10.0,
+      "school": 9.0,
+      "corridor": 5.0,
+      "residential": 9.0,
+      "hospital": 12.0
+    }
+  },
+  "default_maintenance_factor": 0.80,
+  "default_cu": 0.65,
+  "circuits": {
+    "max_fixtures_per_circuit": 15,
+    "default_breaker_amps": 10,
+    "default_cable_size_sqmm": 1.5,
+    "max_voltage_drop_pct": 2.5
+  }
+}

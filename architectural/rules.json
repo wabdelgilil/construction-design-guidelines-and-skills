@@ -1,0 +1,73 @@
+{
+  "discipline": "architectural",
+  "level": 1,
+  "description": "Discipline-wide shared architectural engineering parameters and code profiles",
+  "codes": {
+    "SBC": {
+      "standard_reference": "Saudi Building Code (SBC 201 General Building, SBC 801 Fire Protection, MoMAH Regulations)",
+      "min_ceiling_height_habitable_m": 2.80,
+      "min_ceiling_height_service_m": 2.40,
+      "min_corridor_width_residential_m": 1.10,
+      "min_corridor_width_public_m": 1.80,
+      "stairs": {
+        "max_riser_mm": 175,
+        "min_tread_mm": 280,
+        "min_width_residential_m": 1.10
+      },
+      "doors": {
+        "main_entrance_min_width_m": 1.00,
+        "habitable_room_min_width_m": 0.90,
+        "bathroom_min_width_m": 0.80,
+        "min_height_m": 2.10
+      },
+      "accessibility": {
+        "max_ramp_slope": "1:12",
+        "min_turning_radius_m": 1.50
+      }
+    },
+    "IBC": {
+      "standard_reference": "International Building Code (IBC 2021) / ADA Standards",
+      "min_ceiling_height_habitable_m": 2.75,
+      "min_ceiling_height_service_m": 2.30,
+      "min_corridor_width_residential_m": 1.12,
+      "min_corridor_width_public_m": 1.83,
+      "stairs": {
+        "max_riser_mm": 178,
+        "min_tread_mm": 279,
+        "min_width_residential_m": 1.12
+      },
+      "doors": {
+        "main_entrance_min_width_m": 0.91,
+        "habitable_room_min_width_m": 0.81,
+        "bathroom_min_width_m": 0.81,
+        "min_height_m": 2.03
+      },
+      "accessibility": {
+        "max_ramp_slope": "1:12",
+        "min_turning_radius_m": 1.52
+      }
+    },
+    "ECP": {
+      "standard_reference": "Egyptian Building Law & Code (Law 119/2008 & Executive Regulations)",
+      "min_ceiling_height_habitable_m": 2.70,
+      "min_ceiling_height_service_m": 2.30,
+      "min_corridor_width_residential_m": 1.00,
+      "min_corridor_width_public_m": 1.50,
+      "stairs": {
+        "max_riser_mm": 170,
+        "min_tread_mm": 270,
+        "min_width_residential_m": 1.10
+      },
+      "doors": {
+        "main_entrance_min_width_m": 1.00,
+        "habitable_room_min_width_m": 0.90,
+        "bathroom_min_width_m": 0.80,
+        "min_height_m": 2.10
+      },
+      "accessibility": {
+        "max_ramp_slope": "1:10",
+        "min_turning_radius_m": 1.40
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "leaf_skill": "isolated_footing",
+  "discipline": "structural",
+  "sub_branch": "foundations",
+  "level": 3,
+  "description": "Code limits and design equations for isolated pad footings",
+  "codes": {
+    "SBC": {
+      "standard_reference": "SBC 304 Section 13 & 22 / ACI 318-19",
+      "phi_shear": 0.75,
+      "phi_flexure": 0.90,
+      "min_reinforcement_ratio": 0.0018,
+      "max_bar_spacing_mm": 200,
+      "min_bar_spacing_mm": 100,
+      "default_bar_diameter_mm": 14,
+      "self_weight_allowance_percent": 8.0,
+      "punching_critical_section": "d/2 from column face",
+      "beam_shear_critical_section": "d from column face"
+    },
+    "ACI": {
+      "standard_reference": "ACI 318-19 Chapters 13 & 22",
+      "phi_shear": 0.75,
+      "phi_flexure": 0.90,
+      "min_reinforcement_ratio": 0.0018,
+      "max_bar_spacing_mm": 200,
+      "min_bar_spacing_mm": 100,
+      "default_bar_diameter_mm": 14,
+      "self_weight_allowance_percent": 8.0,
+      "punching_critical_section": "d/2 from column face",
+      "beam_shear_critical_section": "d from column face"
+    },
+    "ECP": {
+      "standard_reference": "ECP 203-2018 Design of Isolated Footings",
+      "gamma_concrete": 1.50,
+      "gamma_steel": 1.15,
+      "min_reinforcement_ratio": 0.0015,
+      "max_bar_spacing_mm": 200,
+      "min_bar_spacing_mm": 100,
+      "default_bar_diameter_mm": 14,
+      "self_weight_allowance_percent": 8.0,
+      "punching_critical_section": "d/2 from column face",
+      "beam_shear_critical_section": "d/2 from column face"
+    }
+  }
+}

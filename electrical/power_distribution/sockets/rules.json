@@ -1,0 +1,78 @@
+{
+  "leaf_skill": "sockets",
+  "discipline": "electrical",
+  "sub_branch": "power_distribution",
+  "level": 3,
+  "description": "Code limits and branch circuit rules for small power sockets and dedicated appliance feeds",
+  "codes": {
+    "SBC": {
+      "standard_reference": "SBC 401 Section 55 & SASO 2203 / IEC 60364",
+      "plug_type": "Type G (BS 1363 3-pin)",
+      "standard_circuit_breaker_amps": 16,
+      "max_sockets_per_circuit": 10,
+      "standard_cable_size_sqmm": 2.5,
+      "earthing_conductor_size_sqmm": 2.5,
+      "mounting_heights_cm": {
+        "general_living_bedrooms": 30,
+        "kitchen_counter": 120,
+        "bathroom_shaver_ip44": 140,
+        "tv_screen_receptacles": 110,
+        "water_heater_dp_switch": 160
+      },
+      "dedicated_circuits_load_w": {
+        "refrigerator": 500,
+        "microwave": 1500,
+        "dishwasher": 2000,
+        "washing_machine": 2000,
+        "water_heater": 1500,
+        "room_ac_split": 2500
+      }
+    },
+    "NEC": {
+      "standard_reference": "NFPA 70 / NEC 2020 Article 210",
+      "plug_type": "Type B (NEMA 5-15 / 5-20)",
+      "standard_circuit_breaker_amps": 20,
+      "max_sockets_per_circuit": 8,
+      "standard_cable_size_sqmm": 3.31,
+      "earthing_conductor_size_sqmm": 3.31,
+      "mounting_heights_cm": {
+        "general_living_bedrooms": 30,
+        "kitchen_counter": 115,
+        "bathroom_gfci": 115,
+        "tv_screen_receptacles": 110,
+        "water_heater_dp_switch": 150
+      },
+      "dedicated_circuits_load_w": {
+        "refrigerator": 600,
+        "microwave": 1500,
+        "dishwasher": 1800,
+        "washing_machine": 1800,
+        "water_heater": 2000,
+        "room_ac_split": 2500
+      }
+    },
+    "ECP": {
+      "standard_reference": "Egyptian Code of Electrical Installations",
+      "plug_type": "Type C / F (Europlug)",
+      "standard_circuit_breaker_amps": 16,
+      "max_sockets_per_circuit": 10,
+      "standard_cable_size_sqmm": 2.5,
+      "earthing_conductor_size_sqmm": 2.5,
+      "mounting_heights_cm": {
+        "general_living_bedrooms": 30,
+        "kitchen_counter": 120,
+        "bathroom_shaver": 140,
+        "tv_screen_receptacles": 110,
+        "water_heater_dp_switch": 160
+      },
+      "dedicated_circuits_load_w": {
+        "refrigerator": 500,
+        "microwave": 1500,
+        "dishwasher": 2000,
+        "washing_machine": 2000,
+        "water_heater": 1500,
+        "room_ac_split": 2500
+      }
+    }
+  }
+}

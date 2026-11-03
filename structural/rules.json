@@ -1,0 +1,46 @@
+{
+  "discipline": "structural",
+  "level": 1,
+  "description": "Discipline-wide shared structural engineering parameters and code profiles",
+  "codes": {
+    "SBC": {
+      "standard_reference": "Saudi Building Code (SBC 304 Concrete, SBC 301 Loads)",
+      "concrete_strength_type": "cylinder_fc",
+      "default_fc_prime_mpa": 28.0,
+      "default_fy_mpa": 420.0,
+      "concrete_unit_weight_kn_m3": 25.0,
+      "plain_concrete_unit_weight_kn_m3": 23.0,
+      "modulus_of_elasticity_concrete_formula": "4700 * sqrt(fc)",
+      "load_combinations": {
+        "uls_gravity": "1.2D + 1.6L",
+        "sls_service": "1.0D + 1.0L"
+      }
+    },
+    "ACI": {
+      "standard_reference": "American Concrete Institute (ACI 318-19)",
+      "concrete_strength_type": "cylinder_fc",
+      "default_fc_prime_mpa": 28.0,
+      "default_fy_mpa": 420.0,
+      "concrete_unit_weight_kn_m3": 24.5,
+      "plain_concrete_unit_weight_kn_m3": 23.0,
+      "modulus_of_elasticity_concrete_formula": "4700 * sqrt(fc)",
+      "load_combinations": {
+        "uls_gravity": "1.2D + 1.6L",
+        "sls_service": "1.0D + 1.0L"
+      }
+    },
+    "ECP": {
+      "standard_reference": "Egyptian Code of Practice (ECP 203-2018)",
+      "concrete_strength_type": "cube_fcu",
+      "default_fcu_mpa": 30.0,
+      "default_fy_mpa": 400.0,
+      "concrete_unit_weight_kn_m3": 25.0,
+      "plain_concrete_unit_weight_kn_m3": 22.0,
+      "modulus_of_elasticity_concrete_formula": "4400 * sqrt(fcu)",
+      "load_combinations": {
+        "uls_gravity": "1.4D + 1.6L",
+        "sls_service": "1.0D + 1.0L"
+      }
+    }
+  }
+}

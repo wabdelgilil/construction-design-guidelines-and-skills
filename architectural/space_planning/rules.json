@@ -1,0 +1,24 @@
+{
+  "node_type": "leaf",
+  "discipline": "architectural",
+  "category": "space_planning",
+  "sub_category": "room_matrix_compliance",
+  "typology_requirements": {
+    "residential": {
+      "master_bedroom": { "min_area_m2": 14.0, "min_width_m": 3.2, "min_height_m": 2.8, "min_glazing_ratio": 0.10 },
+      "secondary_bedroom": { "min_area_m2": 10.0, "min_width_m": 2.8, "min_height_m": 2.8, "min_glazing_ratio": 0.10 },
+      "living_room": { "min_area_m2": 18.0, "min_width_m": 3.6, "min_height_m": 2.8, "min_glazing_ratio": 0.10 },
+      "kitchen": { "min_area_m2": 6.0, "min_width_m": 2.0, "min_height_m": 2.5, "min_glazing_ratio": 0.08 },
+      "bathroom": { "min_area_m2": 3.2, "min_width_m": 1.4, "min_height_m": 2.4, "min_glazing_ratio": 0.05 },
+      "powder_room": { "min_area_m2": 1.8, "min_width_m": 1.1, "min_height_m": 2.4, "min_glazing_ratio": 0.05 },
+      "corridor": { "min_area_m2": 2.0, "min_width_m": 1.1, "min_height_m": 2.4, "min_glazing_ratio": 0.0 }
+    },
+    "commercial_office": {
+      "private_office": { "min_area_m2": 10.0, "min_width_m": 2.8, "min_height_m": 2.8, "min_glazing_ratio": 0.08 },
+      "open_office": { "min_area_m2": 30.0, "min_width_m": 5.0, "min_height_m": 3.0, "min_glazing_ratio": 0.10 },
+      "conference_room": { "min_area_m2": 18.0, "min_width_m": 3.5, "min_height_m": 2.8, "min_glazing_ratio": 0.08 },
+      "server_room": { "min_area_m2": 8.0, "min_width_m": 2.5, "min_height_m": 2.8, "min_glazing_ratio": 0.0 },
+      "restroom": { "min_area_m2": 4.0, "min_width_m": 1.5, "min_height_m": 2.4, "min_glazing_ratio": 0.0 }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "node_type": "leaf",
+  "discipline": "electrical",
+  "category": "power_distribution",
+  "sub_category": "medical_isolated_power_system",
+  "specialized_typology": "hospital_operating_theater_group_2",
+  "applicable_standards": [
+    "IEC 60364-7-710 (Medical locations)",
+    "NFPA 99 (Health Care Facilities Code)",
+    "SBC 401 (Saudi Electrical Code - Medical Locations)"
+  ],
+  "transformer_specifications": {
+    "standard_ratings_kva": [3.15, 4.0, 5.0, 6.3, 8.0, 10.0],
+    "primary_voltage_v": 230.0,
+    "secondary_voltage_v": 230.0,
+    "frequency_hz": 60.0,
+    "max_leakage_current_to_ground_ma": 0.5,
+    "max_no_load_current_pct": 3.0,
+    "inrush_current_multiplier": 12.0
+  },
+  "insulation_monitoring": {
+    "device_type": "IMD (Insulation Monitoring Device)",
+    "internal_ac_impedance_kohm": 100.0,
+    "alarm_threshold_kohm": 50.0,
+    "test_voltage_vdc": 12.0,
+    "max_measuring_current_ma": 1.0,
+    "remote_alarm_panel_required": true
+  },
+  "branch_circuits": {
+    "min_socket_circuits_per_or": 12,
+    "breaker_type": "2-Pole (DP) MCB (Double Break)",
+    "default_breaker_rating_amps": 16,
+    "default_cable_size_sqmm": 4.0,
+    "max_cable_length_m": 25.0
+  },
+  "supplementary_equipotential_bonding": {
+    "max_resistance_ohms": 0.10,
+    "poag_terminal_size_sqmm": 6.0,
+    "main_bonding_conductor_sqmm": 16.0
+  }
+}

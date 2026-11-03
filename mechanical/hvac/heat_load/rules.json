@@ -1,0 +1,30 @@
+{
+  "node_type": "leaf",
+  "discipline": "mechanical",
+  "category": "hvac",
+  "sub_category": "cooling_load",
+  "heat_gain_factors": {
+    "u_values_w_per_m2_k": {
+      "external_wall_insulated": 0.35,
+      "external_wall_uninsulated": 1.40,
+      "roof_insulated": 0.25,
+      "window_double_glazed": 2.2,
+      "partition_wall": 1.2
+    },
+    "occupant_heat_gain_watts": {
+      "office_sedentary": { "sensible": 75.0, "latent": 55.0 },
+      "classroom": { "sensible": 70.0, "latent": 50.0 },
+      "retail_walking": { "sensible": 85.0, "latent": 75.0 },
+      "residential": { "sensible": 75.0, "latent": 55.0 }
+    },
+    "ventilation_rates_cfm_per_person": {
+      "office": 17.0,
+      "classroom": 15.0,
+      "retail": 15.0,
+      "residential": 15.0
+    },
+    "standard_delta_t_air_f": 20.0
+  },
+  "duct_sizing_friction_rate_in_wg_per_100ft": 0.08,
+  "max_diffuser_noise_criterion_nc": 30
+}

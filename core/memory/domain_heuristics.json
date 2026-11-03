@@ -1,0 +1,103 @@
+{
+  "system": "Multi-Disciplinary Engineering Design Heuristics",
+  "version": "1.0.0",
+  "description": "Central repository of field-tested engineering heuristics and domain best practices",
+  "disciplines": {
+    "structural": {
+      "foundations": {
+        "min_cover_against_earth_mm": 75,
+        "blinding_concrete_offset_mm": 100,
+        "cantilever_equality_rule": "Maintain equal projections (L - col_L = B - col_B) to equalize flexural moments",
+        "punching_critical_section": "d/2 from column face on all sides",
+        "beam_shear_critical_section": "d from column face along cantilever",
+        "typical_soil_bearing_ranges_kpa": {
+          "soft_clay": 75,
+          "medium_clay": 150,
+          "stiff_clay": 250,
+          "dense_sand_gravel": 300,
+          "sound_rock": 500
+        }
+      },
+      "columns": {
+        "min_dimension_mm": 200,
+        "min_rebar_count_rect": 4,
+        "min_rebar_count_circular": 6,
+        "tie_spacing_rule": "min(16 * d_bar, 48 * d_tie, min_column_dimension)"
+      }
+    },
+    "electrical": {
+      "small_power": {
+        "standard_mounting_heights_cm": {
+          "general_living_bedrooms": 30,
+          "kitchen_countertops": 120,
+          "bathroom_shaver_mirror": 140,
+          "switches_near_doors": 120,
+          "tv_screen_receptacles": 110,
+          "water_heater_switches": 160
+        },
+        "max_outlets_per_branch_circuit": 10,
+        "standard_breaker_amperage": 16,
+        "standard_socket_wire_size_sqmm": 2.5,
+        "dedicated_circuits_mandatory_for": [
+          "refrigerator",
+          "microwave_oven",
+          "dishwasher",
+          "washing_machine",
+          "water_heater",
+          "air_conditioner"
+        ]
+      },
+      "lighting": {
+        "lumen_method_formula": "N_fixtures = (Target_Lux * Room_Area) / (Lumens_per_fixture * CU * MF)",
+        "default_maintenance_factor_mf": 0.80,
+        "standard_lux_levels": {
+          "living_room": 150,
+          "bedroom": 100,
+          "kitchen": 300,
+          "bathroom": 200,
+          "office_classroom": 400,
+          "hospital_patient_room": 150,
+          "hospital_operating_room": 1000,
+          "corridor_stairs": 100
+        }
+      },
+      "cables_and_distribution": {
+        "max_voltage_drop_branch_pct": 3.0,
+        "max_voltage_drop_total_pct": 5.0,
+        "max_unbalance_pct_between_phases": 5.0,
+        "neutral_sizing_rule": "Same size as phase conductor up to 16 mm2; min 50% for larger cables under non-harmonic loads"
+      }
+    },
+    "mechanical": {
+      "hvac": {
+        "cooling_load_rule_of_thumb_sqm_per_ton": {
+          "residential_moderate_climate": 16.0,
+          "residential_hot_gulf_climate": 10.0,
+          "commercial_office": 12.0,
+          "restaurant": 8.0
+        },
+        "air_flow_cfm_per_ton": 400,
+        "max_main_duct_velocity_fpm": 1200,
+        "max_branch_duct_velocity_fpm": 800
+      },
+      "plumbing": {
+        "min_drainage_slope_percent": {
+          "pipes_under_75mm": 2.0,
+          "pipes_75mm_to_150mm": 1.0
+        },
+        "standard_water_mains_pressure_bar": 2.5
+      }
+    },
+    "architectural": {
+      "clearances": {
+        "min_habitable_ceiling_m": 2.80,
+        "min_residential_corridor_m": 1.10,
+        "min_hospital_corridor_m": 2.40,
+        "min_entrance_door_width_m": 1.00,
+        "min_room_door_width_m": 0.90,
+        "max_stair_riser_mm": 175,
+        "min_stair_tread_mm": 280
+      }
+    }
+  }
+}

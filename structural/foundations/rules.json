@@ -1,0 +1,35 @@
+{
+  "sub_branch": "foundations",
+  "discipline": "structural",
+  "level": 2,
+  "description": "Shared geotechnical and concrete foundation parameters",
+  "codes": {
+    "SBC": {
+      "standard_reference": "SBC 304 (Concrete) & SBC 302 (Foundations)",
+      "default_allowable_soil_bearing_capacity_kpa": 200.0,
+      "min_concrete_cover_earth_cast_mm": 75,
+      "min_footing_thickness_mm": 300,
+      "default_plain_concrete_thickness_mm": 100,
+      "soil_safety_factor": 1.0,
+      "density_of_soil_kn_m3": 18.0
+    },
+    "ACI": {
+      "standard_reference": "ACI 318-19 Section 13 (Foundations)",
+      "default_allowable_soil_bearing_capacity_kpa": 200.0,
+      "min_concrete_cover_earth_cast_mm": 75,
+      "min_footing_thickness_mm": 300,
+      "default_plain_concrete_thickness_mm": 100,
+      "soil_safety_factor": 1.0,
+      "density_of_soil_kn_m3": 18.0
+    },
+    "ECP": {
+      "standard_reference": "ECP 203-2018 & Egyptian Soil Mechanics and Foundations Code",
+      "default_allowable_soil_bearing_capacity_kpa": 150.0,
+      "min_concrete_cover_earth_cast_mm": 70,
+      "min_footing_thickness_mm": 300,
+      "default_plain_concrete_thickness_mm": 100,
+      "soil_safety_factor": 1.0,
+      "density_of_soil_kn_m3": 18.0
+    }
+  }
+}

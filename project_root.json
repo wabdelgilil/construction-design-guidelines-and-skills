@@ -1,0 +1,14 @@
+{
+  "project_name": "Construction Design Guidelines and Skills",
+  "version": "1.0.0",
+  "active_code": "SBC",
+  "building_type": "residential",
+  "supported_codes": ["SBC", "ECP", "ACI", "NEC"],
+  "supported_building_types": ["residential", "school", "hospital", "commercial", "industrial"],
+  "unit_system": "SI",
+  "project_metadata": {
+    "country": "Saudi Arabia",
+    "city": "Riyadh",
+    "occupancy_type": "Residential"
+  }
+}

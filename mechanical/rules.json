@@ -1,0 +1,55 @@
+{
+  "discipline": "mechanical",
+  "level": 1,
+  "description": "Discipline-wide shared mechanical engineering parameters and code profiles",
+  "codes": {
+    "SBC": {
+      "standard_reference": "Saudi Building Code (SBC 501 Mechanical, SBC 701 Plumbing, SBC 801 Fire)",
+      "indoor_comfort": {
+        "summer_temp_c": 23.5,
+        "summer_rh_percent": 50.0,
+        "winter_temp_c": 21.0
+      },
+      "outdoor_design_defaults": {
+        "summer_db_c": 46.0,
+        "summer_wb_c": 28.0,
+        "winter_db_c": 8.0
+      },
+      "water_supply_pressure_kpa": 250.0,
+      "fire_fighting_standard": "SBC 801 / NFPA",
+      "ventilation_standard": "SBC 501 / ASHRAE 62.1"
+    },
+    "ASHRAE_IPC": {
+      "standard_reference": "International Mechanical Code (IMC) & International Plumbing Code (IPC) / NFPA",
+      "indoor_comfort": {
+        "summer_temp_c": 24.0,
+        "summer_rh_percent": 50.0,
+        "winter_temp_c": 21.0
+      },
+      "outdoor_design_defaults": {
+        "summer_db_c": 35.0,
+        "summer_wb_c": 24.0,
+        "winter_db_c": 0.0
+      },
+      "water_supply_pressure_kpa": 275.0,
+      "fire_fighting_standard": "NFPA 13, 14, 20",
+      "ventilation_standard": "ASHRAE 62.1"
+    },
+    "ECP": {
+      "standard_reference": "Egyptian Code of Practice for HVAC, Plumbing, and Fire Fighting",
+      "indoor_comfort": {
+        "summer_temp_c": 24.0,
+        "summer_rh_percent": 50.0,
+        "winter_temp_c": 22.0
+      },
+      "outdoor_design_defaults": {
+        "summer_db_c": 38.0,
+        "summer_wb_c": 24.0,
+        "winter_db_c": 10.0
+      },
+      "water_supply_pressure_kpa": 200.0,
+      "fire_fighting_standard": "ECP Fire Protection",
+      "ventilation_standard": "ECP HVAC"
+    }
+  }
+}

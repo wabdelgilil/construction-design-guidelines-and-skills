@@ -1,0 +1,42 @@
+{
+  "leaf_skill": "strap_footing",
+  "discipline": "structural",
+  "sub_branch": "foundations",
+  "level": 3,
+  "description": "Code limits and design equations for strap/cantilever footings connecting boundary column to interior column",
+  "codes": {
+    "SBC": {
+      "standard_reference": "SBC 304 Section 13 & 22 / ACI 318-19",
+      "phi_shear": 0.75,
+      "phi_flexure": 0.90,
+      "min_reinforcement_ratio_beam": 0.0033,
+      "min_reinforcement_ratio_slab": 0.0018,
+      "strap_beam_min_width_mm": 400,
+      "max_stirrup_spacing_mm": 200,
+      "concrete_cover_beam_mm": 50,
+      "concrete_cover_footing_mm": 75
+    },
+    "ACI": {
+      "standard_reference": "ACI 318-19 Chapters 13, 18 & 22",
+      "phi_shear": 0.75,
+      "phi_flexure": 0.90,
+      "min_reinforcement_ratio_beam": 0.0033,
+      "min_reinforcement_ratio_slab": 0.0018,
+      "strap_beam_min_width_mm": 400,
+      "max_stirrup_spacing_mm": 200,
+      "concrete_cover_beam_mm": 50,
+      "concrete_cover_footing_mm": 75
+    },
+    "ECP": {
+      "standard_reference": "ECP 203-2018 Strap Footing Design",
+      "gamma_concrete": 1.50,
+      "gamma_steel": 1.15,
+      "min_reinforcement_ratio_beam": 0.0025,
+      "min_reinforcement_ratio_slab": 0.0015,
+      "strap_beam_min_width_mm": 400,
+      "max_stirrup_spacing_mm": 200,
+      "concrete_cover_beam_mm": 50,
+      "concrete_cover_footing_mm": 70
+    }
+  }
+}

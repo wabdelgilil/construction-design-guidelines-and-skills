@@ -1,0 +1,37 @@
+{
+  "node_type": "leaf",
+  "discipline": "architectural",
+  "category": "life_safety",
+  "sub_category": "means_of_egress",
+  "standards": [
+    "SBC 801 (Saudi Fire Protection Code)",
+    "NFPA 101 (Life Safety Code)",
+    "IBC Chapter 10 (Means of Egress)"
+  ],
+  "occupant_load_factors_m2_per_person": {
+    "business_office": 9.3,
+    "assembly_unconcentrated": 1.4,
+    "assembly_concentrated_chairs": 0.65,
+    "educational_classroom": 1.9,
+    "mercantile_retail": 5.6,
+    "residential_dwelling": 18.6,
+    "storage_warehouse": 28.0
+  },
+  "egress_width_capacity_factors_mm_per_person": {
+    "stairways_sprinklered": 5.1,
+    "stairways_unsprinklered": 7.6,
+    "level_components_doors_corridors_sprinklered": 3.8,
+    "level_components_doors_corridors_unsprinklered": 5.1
+  },
+  "travel_distance_limits_m": {
+    "business_sprinklered": 76.0,
+    "business_unsprinklered": 61.0,
+    "residential_sprinklered": 61.0,
+    "residential_unsprinklered": 45.0
+  },
+  "max_common_path_of_travel_m": 23.0,
+  "max_dead_end_corridor_length_m": {
+    "sprinklered": 15.0,
+    "unsprinklered": 6.0
+  }
+}

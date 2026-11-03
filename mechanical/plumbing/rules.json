@@ -1,0 +1,35 @@
+{
+  "node_type": "leaf",
+  "discipline": "mechanical",
+  "category": "plumbing",
+  "sub_category": "drainage_and_water_supply",
+  "applicable_codes": [
+    "SBC 701 (Saudi Plumbing Code)",
+    "IPC (International Plumbing Code)",
+    "ECP (Egyptian Code of Practice - Plumbing)"
+  ],
+  "fixture_units": {
+    "water_closet_flush_tank": { "wsfu_cold": 2.5, "wsfu_hot": 0.0, "dfu": 3.0, "min_trap_in": 3.0 },
+    "water_closet_flush_valve": { "wsfu_cold": 5.0, "wsfu_hot": 0.0, "dfu": 4.0, "min_trap_in": 3.0 },
+    "lavatory": { "wsfu_cold": 0.75, "wsfu_hot": 0.75, "dfu": 1.0, "min_trap_in": 1.25 },
+    "shower": { "wsfu_cold": 1.5, "wsfu_hot": 1.5, "dfu": 2.0, "min_trap_in": 2.0 },
+    "kitchen_sink": { "wsfu_cold": 1.5, "wsfu_hot": 1.5, "dfu": 2.0, "min_trap_in": 1.5 },
+    "washing_machine": { "wsfu_cold": 1.5, "wsfu_hot": 1.5, "dfu": 3.0, "min_trap_in": 2.0 },
+    "floor_drain": { "wsfu_cold": 0.0, "wsfu_hot": 0.0, "dfu": 2.0, "min_trap_in": 3.0 }
+  },
+  "stack_capacity_dfu": {
+    "2_inch": 24,
+    "3_inch": 72,
+    "4_inch": 500,
+    "6_inch": 1900
+  },
+  "building_drain_capacity_dfu_at_1_pct_slope": {
+    "3_inch": 36,
+    "4_inch": 180,
+    "6_inch": 700
+  },
+  "water_velocity_m_per_s": {
+    "suction_max": 1.5,
+    "discharge_max": 2.4
+  }
+}
